@@ -1,0 +1,197 @@
+@charset "UTF-8";
+/* profile page */
+.c-form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.c-form table {
+  width: 100%;
+}
+.c-form table th,
+.c-form table td {
+  padding-top: 25px;
+  padding-bottom: 22px;
+  border-top: 1px solid #cccccc;
+  text-align: left;
+}
+.c-form table th.top,
+.c-form table td.top {
+  vertical-align: top;
+}
+.c-form table th {
+  width: 30%;
+  padding-left: 100px;
+}
+.c-form table td {
+  width: 70%;
+}
+.c-form table td span {
+  margin-left: 36px;
+  color: #aaaaaa;
+}
+.c-form input:not([type=radio]),
+.c-form select {
+  padding: 20px 23px;
+  border: 0;
+  background: #f6f6f6;
+  color: #aaaaaa;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  vertical-align: middle;
+}
+.c-form label.radio {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  float: left;
+  margin-bottom: -7px;
+}
+.c-form label.radio:not(:last-child) {
+  margin-right: 30px;
+}
+.c-form label.radio input {
+  margin-right: 15px;
+}
+.c-form textarea {
+  padding: 20px 23px;
+  border: 0;
+  background-color: #f8f8f8;
+  font-size: 1.2rem;
+}
+.c-form .required {
+  position: relative;
+}
+.c-form .required::before {
+  content: "必須";
+  width: 46px;
+  box-sizing: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px 5px 10px;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  text-align: center;
+  color: #ffffff;
+  background-color: #d90000;
+  position: absolute;
+  top: -2px;
+  left: -70px;
+}
+.c-form .gr-btn {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 53px 0 58px 0;
+  border-top: 1px solid #cccccc;
+  text-align: center;
+}
+.c-form .gr-btn button:not(:last-child) {
+  margin-right: 20px;
+}
+.c-form button {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  height: 80px;
+  padding: 10px 15px;
+  border: 2px solid #065B8E;
+  border-radius: 50px;
+  background: #065B8E;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #ffffff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.c-form button span {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.c-form button span::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  float: left;
+  margin-right: 14px;
+  border-radius: 50px;
+  background: #ffffff;
+}
+.c-form button::hover {
+  opacity: 0.5;
+}
+.c-form .sm {
+  width: 360px;
+}
+.c-form .md {
+  width: 500px;
+}
+.c-form .lg {
+  width: 680px;
+}
+
+@media screen and (max-width: 991px) {
+  .c-form {
+    margin-top: 50px;
+  }
+  .c-form input:not([type=radio]),
+  .c-form select {
+    width: 100% !important;
+  }
+  .c-form textarea {
+    width: 100% !important;
+  }
+  .c-form table {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .c-form table tbody {
+    width: 100%;
+  }
+  .c-form table tr {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .c-form table th,
+  .c-form table td {
+    width: 100%;
+  }
+  .c-form table th {
+    padding-left: 0;
+  }
+  .c-form table td {
+    padding-top: 0;
+    border-top: 0;
+  }
+  .c-form table td span {
+    display: block;
+    margin: 15px 0 0 15px;
+  }
+  .c-form table .required::before {
+    position: unset;
+    float: left;
+    margin-top: -2px;
+    margin-right: 15px;
+  }
+  .c-form .gr-btn button {
+    width: calc((100% - 20px) / 2);
+  }
+}
+@media screen and (max-width: 580px) {
+  .c-form .gr-btn {
+    padding-top: 30px;
+  }
+  .c-form .gr-btn button {
+    height: 54px;
+  }
+}/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,75 @@
+/* profile page */
+.p-demo .c-demos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.p-demo .c-demos .c-demo {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.p-demo .c-demos .c-demo .name {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.p-demo .c-demos .c-demo .demo {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+  padding: 20px;
+}
+.p-demo .c-demos .c-demo .code {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 300px;
+  padding: 50px 0 0 0;
+  background: #eeeeee;
+  position: relative;
+  overflow: hidden;
+}
+.p-demo .c-demos .c-demo .code pre {
+  padding: 20px 20px 20px 20px;
+  overflow: auto;
+}
+.p-demo .c-demos .c-demo .code code {
+  font-size: 1.6rem;
+  line-height: 2;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  text-align: left;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  white-space: pre;
+  -webkit-hyphens: none;
+          hyphens: none;
+  -moz-tab-size: 4;
+    -o-tab-size: 4;
+       tab-size: 4;
+}
+.p-demo .c-demos .c-demo .code .btncopy {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 0 5px;
+  background: #707070;
+  font-size: 1.4rem;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+.p-demo .c-demos .c-demo:not(:last-child) {
+  margin-bottom: 50px;
+}/*# sourceMappingURL=demo.css.map */

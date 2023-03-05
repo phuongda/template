@@ -1,0 +1,8804 @@
+@import "core/variable/_color", "core/variable/_fonts"
+
+@charset "UTF-8"
+
+*
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+    *behavior: url(/scripts/boxsizing.htc)
+
+html
+    font-size: 10px
+    // font-size: 62.5%
+
+html
+    height: 100%
+
+html,
+body
+    overflow-x: hidden
+
+body
+    margin: 0 auto
+    padding: 0
+    height: auto
+    width: 100%
+    font-size: 14px
+    color: #111
+    min-width: 320px
+    line-height: 160%
+    font-weight: 500
+    font-family: $fonts-sujin
+    -webkit-text-size-adjust: 100%
+    -moz-text-size-adjust: 100%
+    -ms-text-size-adjust: 100%
+    text-size-adjust: 100%
+    letter-spacing: 2px
+    overflow-x: hidden
+
+img
+    margin: 0
+    padding: 0
+    vertical-align: bottom
+    line-height: 0px
+    // new style
+    width: 100%
+
+img
+    max-width: 100%
+
+ul
+    margin: 0
+    padding: 0
+
+li
+    margin: 0
+    padding: 0
+    list-style: none
+
+dl
+    margin: 0
+    padding: 0
+
+dd
+    margin: 0
+    padding: 0
+    list-style: none
+
+figure
+    margin: 0
+
+p
+    margin: 0
+    padding: 0
+    vertical-align: bottom
+    /* new style */
+    margin-bottom: 10px
+    font-size: 1.4rem
+    line-height: 1.8
+
+strong
+    font-weight: $font-weight-default
+
+a
+    outline: none
+    -webkit-transition: 0.5s
+    transition: 0.5s
+    /* new style */
+    color: $color-black
+    text-decoration: none
+    cursor: pointer
+
+    /* new style */
+    &:hover
+        text-decoration: none
+        color: inherit
+
+.ovh
+    overflow: hidden
+
+.h-nav-wrap .bg-logo
+    background: none
+
+/* h系
+ *---------------------------------------------------
+
+h1, h2, h3, h4, h5
+    margin: 0
+    padding: 0
+
+.bold
+    font-weight: bold
+
+.bold-none
+    font-weight: normal
+
+/*link-style
+ *---------------------------------------
+
+a
+    color: inherit
+
+    &:hover
+        text-decoration: none
+
+/*fontsize-style
+ *---------------------------------------
+
+.text
+
+    &8
+        font-size: 0.8rem!important
+
+    &9
+        font-size: 0.9rem!important
+
+    &10
+        font-size: 1rem!important
+
+    &11
+        font-size: 1.1rem!important
+
+    &12
+        font-size: 1.2rem!important
+
+    &13
+        font-size: 1.3rem!important
+
+    &14
+        font-size: 1.4rem!important
+
+    &15
+        font-size: 1.5rem!important
+
+    &16
+        font-size: 1.6rem!important
+
+    &18
+        font-size: 1.8rem!important
+
+    &20
+        font-size: 2rem!important
+
+    &22
+        font-size: 2.2rem!important
+
+    &24
+        font-size: 2.4rem!important
+
+    &25
+        font-size: 2.5rem!important
+
+    &26
+        font-size: 2.6rem!important
+
+    &28
+        font-size: 2.8rem!important
+
+    &30
+        font-size: 3rem!important
+
+    &32
+        font-size: 3.2rem!important
+
+    &34
+        font-size: 3.4rem!important
+
+    &36
+        font-size: 3.6rem!important
+
+    &38
+        font-size: 3.8rem!important
+
+    &40
+        font-size: 4rem!important
+
+    &42
+        font-size: 4.2rem!important
+
+    &43
+        font-size: 4.3rem!important
+
+    &44
+        font-size: 4.4rem!important
+
+    &45
+        font-size: 4.5rem!important
+
+    &46
+        font-size: 4.6rem!important
+
+    &48
+        font-size: 4.8rem!important
+
+    &50
+        font-size: 5rem!important
+
+    &52
+        font-size: 5.2rem!important
+
+    &54
+        font-size: 5.4rem!important
+
+    &58
+        font-size: 5.8rem!important
+
+    &60
+        font-size: 6rem!important
+
+    &62
+        font-size: 6.2rem!important
+
+    &64
+        font-size: 6.4rem!important
+
+    &68
+        font-size: 6.8rem!important
+
+    &70
+        font-size: 7rem!important
+
+    &72
+        font-size: 7.2rem!important
+
+    &74
+        font-size: 7.4rem!important
+
+    &80
+        font-size: 8rem!important
+
+    &82
+        font-size: 8.2rem!important
+
+    &84
+        font-size: 8.4rem!important
+
+    &90
+        font-size: 9rem!important
+
+    &91
+        font-size: 9.1rem!important
+
+    &96
+        font-size: 9.6rem!important
+
+.lineheight
+
+    &10
+        line-height: 1!important
+
+    &12
+        line-height: 1.2!important
+
+    &14
+        line-height: 1.4!important
+
+    &15
+        line-height: 1.5!important
+
+    &16
+        line-height: 1.6!important
+
+    &18
+        line-height: 1.8!important
+
+    &20
+        line-height: 2!important
+
+.justify
+    text-align: justify !important
+
+.lowercase
+    text-transform: lowercase !important
+
+.uppercase
+    text-transform: uppercase !important
+
+.capitalize
+    text-transform: capitalize !important
+
+.light
+    font-weight: 300 !important
+
+.normal
+    font-weight: 500 !important
+
+.bold
+    font-weight: 700 !important
+
+.italic
+    font-style: italic !important
+
+.visible
+    visibility: visible !important
+
+.invisible
+    visibility: hidden !important
+
+/*** ALIGN **
+
+.t
+
+    &c
+        text-align: center!important
+
+    &r
+        text-align: right!important
+
+    &l
+        text-align: left!important
+
+/*color-style
+ *---------------------------------------
+
+.red
+    color: #990000!important
+
+.blue
+    color: #000099!important
+
+.green
+    color: #009900!important
+
+.yellow
+    color: #ffff00!important
+
+.cl
+
+    &gray
+        color: $color-gray!important
+
+    &black
+        color: $color-black!important
+
+    &red
+        color: $color-red!important
+
+    &blue
+        color: $color-blue!important
+
+    &green
+        color: $color-green!important
+
+    &orange
+        color: $color-orange!important
+
+    &white
+        color: white!important
+
+.bg
+
+    &gray
+        background: $color-gray!important
+
+    &black
+        background: $color-black!important
+
+    &red
+        background: $color-red!important
+
+    &blue
+        background: $color-blue!important
+
+    &green
+        background: $color-green!important
+
+    &orange
+        background: $color-orange!important
+
+    &white
+        background: white!important
+
+    &trans
+        background: transparent!important
+
+.bf
+
+    &gray
+
+        &::before
+            background: $color-gray!important
+
+    &black
+
+        &::before
+            background: $color-black!important
+
+    &red
+
+        &::before
+            background: $color-red!important
+
+    &blue
+
+        &::before
+            background: $color-blue!important
+
+    &green
+
+        &::before
+            background: $color-green!important
+
+    &orange
+
+        &::before
+            background: $color-orange!important
+
+    &white
+
+        &::before
+            background: white!important
+
+.af
+
+    &gray
+
+        &::after
+            background: $color-gray!important
+
+    &black
+
+        &::after
+            background: $color-black!important
+
+    &red
+
+        &::after
+            background: $color-red!important
+
+    &blue
+
+        &::after
+            background: $color-blue!important
+
+    &green
+
+        &::after
+            background: $color-green!important
+
+    &orange
+
+        &::after
+            background: $color-orange!important
+
+    &white
+
+        &::after
+            background: white!important
+
+.bfaf
+
+    &gray
+
+        &::before,
+        &::after
+            background: $color-gray!important
+
+    &black
+
+        &::before,
+        &::after
+            background: $color-black!important
+
+    &red
+
+        &::before,
+        &::after
+            background: $color-red!important
+
+    &blue
+
+        &::before,
+        &::after
+            background: $color-blue!important
+
+    &green
+
+        &::before,
+        &::after
+            background: $color-green!important
+
+    &orange
+
+        &::before,
+        &::after
+            background: $color-orange!important
+
+    &white
+
+        &::before,
+        &::after
+            background: white!important
+
+.bd
+
+    &gray
+        border-color: $color-gray!important
+
+    &black
+        border-color: $color-black!important
+
+    &red
+        border-color: $color-red!important
+
+    &blue
+        border-color: $color-blue!important
+
+    &green
+        border-color: $color-green!important
+
+    &orange
+        border-color: $color-orange!important
+
+    &white
+        border-color: white!important
+
+/*** FLOAT **
+
+.f
+
+    &r
+        float: right!important
+
+    &l
+        float: left!important
+
+    &n
+        float: none!important
+
+img
+    max-width: 100%
+
+.cb
+    clear: both
+
+/*** PADDING **
+
+.p
+
+    &0
+        padding: 0 !important
+
+    &1
+        padding: 1px !important
+
+    &2
+        padding: 2px !important
+
+    &3
+        padding: 3px !important
+
+    &4
+        padding: 4px !important
+
+    &5
+        padding: 5px !important
+
+    &6
+        padding: 6px !important
+
+    &7
+        padding: 7px !important
+
+    &8
+        padding: 8px !important
+
+    &9
+        padding: 9px !important
+
+    &10
+        padding: 10px !important
+
+    &15
+        padding: 15px !important
+
+    &20
+        padding: 20px !important
+
+    &25
+        padding: 25px !important
+
+    &30
+        padding: 30px !important
+
+    &35
+        padding: 35px !important
+
+    &40
+        padding: 40px !important
+
+    &45
+        padding: 45px !important
+
+    &50
+        padding: 50px !important
+
+    &55
+        padding: 55px !important
+
+    &60
+        padding: 60px !important
+
+    &65
+        padding: 65px !important
+
+    &70
+        padding: 70px !important
+
+    &75
+        padding: 75px !important
+
+    &80
+        padding: 80px !important
+
+    &85
+        padding: 85px !important
+
+    &90
+        padding: 90px !important
+
+    &95
+        padding: 95px !important
+
+    &100
+        padding: 100px !important
+
+    &105
+        padding: 105px !important
+
+    &110
+        padding: 110px !important
+
+    &115
+        padding: 115px !important
+
+    &120
+        padding: 120px !important
+
+.pt
+
+    &0
+        padding-top: 0 !important
+
+    &1
+        padding-top: 1px !important
+
+    &2
+        padding-top: 2px !important
+
+    &3
+        padding-top: 3px !important
+
+    &4
+        padding-top: 4px !important
+
+    &5
+        padding-top: 5px !important
+
+    &6
+        padding-top: 6px !important
+
+    &7
+        padding-top: 7px !important
+
+    &8
+        padding-top: 8px !important
+
+    &9
+        padding-top: 9px !important
+
+    &10
+        padding-top: 10px !important
+
+    &15
+        padding-top: 15px !important
+
+    &20
+        padding-top: 20px !important
+
+    &25
+        padding-top: 25px !important
+
+    &30
+        padding-top: 30px !important
+
+    &35
+        padding-top: 35px !important
+
+    &40
+        padding-top: 40px !important
+
+    &45
+        padding-top: 45px !important
+
+    &50
+        padding-top: 50px !important
+
+    &55
+        padding-top: 55px !important
+
+    &60
+        padding-top: 60px !important
+
+    &65
+        padding-top: 65px !important
+
+    &70
+        padding-top: 70px !important
+
+    &75
+        padding-top: 75px !important
+
+    &80
+        padding-top: 80px !important
+
+    &85
+        padding-top: 85px !important
+
+    &90
+        padding-top: 90px !important
+
+    &95
+        padding-top: 95px !important
+
+    &100
+        padding-top: 100px !important
+
+    &105
+        padding-top: 105px !important
+
+    &110
+        padding-top: 110px !important
+
+    &115
+        padding-top: 115px !important
+
+    &120
+        padding-top: 120px !important
+
+.pr
+
+    &0
+        padding-right: 0 !important
+
+    &1
+        padding-right: 1px !important
+
+    &2
+        padding-right: 2px !important
+
+    &3
+        padding-right: 3px !important
+
+    &4
+        padding-right: 4px !important
+
+    &5
+        padding-right: 5px !important
+
+    &6
+        padding-right: 6px !important
+
+    &7
+        padding-right: 7px !important
+
+    &8
+        padding-right: 8px !important
+
+    &9
+        padding-right: 9px !important
+
+    &10
+        padding-right: 10px !important
+
+    &15
+        padding-right: 15px !important
+
+    &20
+        padding-right: 20px !important
+
+    &25
+        padding-right: 25px !important
+
+    &30
+        padding-right: 30px !important
+
+    &35
+        padding-right: 35px !important
+
+    &40
+        padding-right: 40px !important
+
+    &45
+        padding-right: 45px !important
+
+    &50
+        padding-right: 50px !important
+
+    &55
+        padding-right: 55px !important
+
+    &60
+        padding-right: 60px !important
+
+    &65
+        padding-right: 65px !important
+
+    &70
+        padding-right: 70px !important
+
+    &75
+        padding-right: 75px !important
+
+    &80
+        padding-right: 80px !important
+
+    &85
+        padding-right: 85px !important
+
+    &90
+        padding-right: 90px !important
+
+    &95
+        padding-right: 95px !important
+
+    &100
+        padding-right: 100px !important
+
+    &105
+        padding-right: 105px !important
+
+    &110
+        padding-right: 110px !important
+
+    &115
+        padding-right: 115px !important
+
+    &120
+        padding-right: 120px !important
+
+.pl
+
+    &0
+        padding-left: 0 !important
+
+    &1
+        padding-left: 1px !important
+
+    &2
+        padding-left: 2px !important
+
+    &3
+        padding-left: 3px !important
+
+    &4
+        padding-left: 4px !important
+
+    &5
+        padding-left: 5px !important
+
+    &6
+        padding-left: 6px !important
+
+    &7
+        padding-left: 7px !important
+
+    &8
+        padding-left: 8px !important
+
+    &9
+        padding-left: 9px !important
+
+    &10
+        padding-left: 10px !important
+
+    &15
+        padding-left: 15px !important
+
+    &20
+        padding-left: 20px !important
+
+    &25
+        padding-left: 25px !important
+
+    &30
+        padding-left: 30px !important
+
+    &35
+        padding-left: 35px !important
+
+    &40
+        padding-left: 40px !important
+
+    &45
+        padding-left: 45px !important
+
+    &50
+        padding-left: 50px !important
+
+    &55
+        padding-left: 55px !important
+
+    &60
+        padding-left: 60px !important
+
+    &65
+        padding-left: 65px !important
+
+    &70
+        padding-left: 70px !important
+
+    &75
+        padding-left: 75px !important
+
+    &80
+        padding-left: 80px !important
+
+    &85
+        padding-left: 85px !important
+
+    &90
+        padding-left: 90px !important
+
+    &95
+        padding-left: 95px !important
+
+    &100
+        padding-left: 100px !important
+
+    &105
+        padding-left: 105px !important
+
+    &110
+        padding-left: 110px !important
+
+    &115
+        padding-left: 115px !important
+
+    &120
+        padding-left: 120px !important
+
+.pb
+
+    &0
+        padding-bottom: 0 !important
+
+    &1
+        padding-bottom: 1px !important
+
+    &2
+        padding-bottom: 2px !important
+
+    &3
+        padding-bottom: 3px !important
+
+    &4
+        padding-bottom: 4px !important
+
+    &5
+        padding-bottom: 5px !important
+
+    &6
+        padding-bottom: 6px !important
+
+    &7
+        padding-bottom: 7px !important
+
+    &8
+        padding-bottom: 8px !important
+
+    &9
+        padding-bottom: 9px !important
+
+    &10
+        padding-bottom: 10px !important
+
+    &15
+        padding-bottom: 15px !important
+
+    &20
+        padding-bottom: 20px !important
+
+    &25
+        padding-bottom: 25px !important
+
+    &30
+        padding-bottom: 30px !important
+
+    &35
+        padding-bottom: 35px !important
+
+    &40
+        padding-bottom: 40px !important
+
+    &45
+        padding-bottom: 45px !important
+
+    &50
+        padding-bottom: 50px !important
+
+    &55
+        padding-bottom: 55px !important
+
+    &60
+        padding-bottom: 60px !important
+
+    &65
+        padding-bottom: 65px !important
+
+    &70
+        padding-bottom: 70px !important
+
+    &75
+        padding-bottom: 75px !important
+
+    &80
+        padding-bottom: 80px !important
+
+    &85
+        padding-bottom: 85px !important
+
+    &90
+        padding-bottom: 90px !important
+
+    &95
+        padding-bottom: 95px !important
+
+    &100
+        padding-bottom: 100px !important
+
+    &105
+        padding-bottom: 105px !important
+
+    &110
+        padding-bottom: 110px !important
+
+    &115
+        padding-bottom: 115px !important
+
+    &120
+        padding-bottom: 120px !important
+
+.px
+
+    &0
+        padding-left: 0 !important
+        padding-right: 0!important
+
+    &1
+        padding-left: 1px !important
+        padding-right: 1px !important
+
+    &2
+        padding-left: 2px !important
+        padding-right: 2px !important
+
+    &3
+        padding-left: 3px !important
+        padding-right: 3px !important
+
+    &4
+        padding-left: 4px !important
+        padding-right: 4px !important
+
+    &5
+        padding-left: 5px !important
+        padding-right: 5px !important
+
+    &6
+        padding-left: 6px !important
+        padding-right: 6px !important
+
+    &7
+        padding-left: 7px !important
+        padding-right: 7px !important
+
+    &8
+        padding-left: 8px !important
+        padding-right: 8px !important
+
+    &9
+        padding-left: 9px !important
+        padding-right: 9px !important
+
+    &10
+        padding-left: 10px !important
+        padding-right: 10px !important
+
+    &15
+        padding-left: 15px !important
+        padding-right: 15px !important
+
+    &20
+        padding-left: 20px !important
+        padding-right: 20px !important
+
+    &25
+        padding-left: 25px !important
+        padding-right: 25px !important
+
+    &30
+        padding-left: 30px !important
+        padding-right: 30px !important
+
+    &35
+        padding-left: 35px !important
+        padding-right: 35px !important
+
+    &40
+        padding-left: 40px !important
+        padding-right: 40px !important
+
+    &45
+        padding-left: 45px !important
+        padding-right: 45px !important
+
+    &50
+        padding-left: 50px !important
+        padding-right: 50px !important
+
+    &55
+        padding-left: 55px !important
+        padding-right: 55px !important
+
+    &60
+        padding-left: 60px !important
+        padding-right: 60px !important
+
+    &65
+        padding-left: 65px !important
+        padding-right: 65px !important
+
+    &70
+        padding-left: 70px !important
+        padding-right: 70px !important
+
+    &75
+        padding-left: 75px !important
+        padding-right: 75px !important
+
+    &80
+        padding-left: 80px !important
+        padding-right: 80px !important
+
+    &85
+        padding-left: 85px !important
+        padding-right: 85px !important
+
+    &90
+        padding-left: 90px !important
+        padding-right: 90px !important
+
+    &95
+        padding-left: 95px !important
+        padding-right: 95px !important
+
+    &100
+        padding-left: 100px !important
+        padding-right: 100px !important
+
+    &105
+        padding-left: 105px !important
+        padding-right: 105px !important
+
+    &110
+        padding-left: 110px !important
+        padding-right: 110px !important
+
+    &115
+        padding-left: 115px !important
+        padding-right: 115px !important
+
+    &120
+        padding-left: 120px !important
+        padding-right: 120px !important
+
+.py
+
+    &0
+        padding-top: 0 !important
+        padding-bottom: 0!important
+
+    &1
+        padding-top: 1px !important
+        padding-bottom: 1px !important
+
+    &2
+        padding-top: 2px !important
+        padding-bottom: 2px !important
+
+    &3
+        padding-top: 3px !important
+        padding-bottom: 3px !important
+
+    &4
+        padding-top: 4px !important
+        padding-bottom: 4px !important
+
+    &5
+        padding-top: 5px !important
+        padding-bottom: 5px !important
+
+    &6
+        padding-top: 6px !important
+        padding-bottom: 6px !important
+
+    &7
+        padding-top: 7px !important
+        padding-bottom: 7px !important
+
+    &8
+        padding-top: 8px !important
+        padding-bottom: 8px !important
+
+    &9
+        padding-top: 9px !important
+        padding-bottom: 9px !important
+
+    &10
+        padding-top: 10px !important
+        padding-bottom: 10px !important
+
+    &15
+        padding-top: 15px !important
+        padding-bottom: 15px !important
+
+    &20
+        padding-top: 20px !important
+        padding-bottom: 20px !important
+
+    &25
+        padding-top: 25px !important
+        padding-bottom: 25px !important
+
+    &30
+        padding-top: 30px !important
+        padding-bottom: 30px !important
+
+    &35
+        padding-top: 35px !important
+        padding-bottom: 35px !important
+
+    &40
+        padding-top: 40px !important
+        padding-bottom: 40px !important
+
+    &45
+        padding-top: 45px !important
+        padding-bottom: 45px !important
+
+    &50
+        padding-top: 50px !important
+        padding-bottom: 50px !important
+
+    &55
+        padding-top: 55px !important
+        padding-bottom: 55px !important
+
+    &60
+        padding-top: 60px !important
+        padding-bottom: 60px !important
+
+    &65
+        padding-top: 65px !important
+        padding-bottom: 65px !important
+
+    &70
+        padding-top: 70px !important
+        padding-bottom: 70px !important
+
+    &75
+        padding-top: 75px !important
+        padding-bottom: 75px !important
+
+    &80
+        padding-top: 80px !important
+        padding-bottom: 80px !important
+
+    &85
+        padding-top: 85px !important
+        padding-bottom: 85px !important
+
+    &90
+        padding-top: 90px !important
+        padding-bottom: 90px !important
+
+    &95
+        padding-top: 95px !important
+        padding-bottom: 95px !important
+
+    &100
+        padding-top: 100px !important
+        padding-bottom: 100px !important
+
+    &105
+        padding-top: 105px!important
+        padding-bottom: 105px !important
+
+    &110
+        padding-top: 110px!important
+        padding-bottom: 110px !important
+
+    &115
+        padding-top: 115px!important
+        padding-bottom: 115px !important
+
+    &120
+        padding-top: 120px!important
+        padding-bottom: 120px !important
+
+/*** MARGIN **
+
+.m
+
+    &0
+        margin: 0 !important
+
+    &1
+        margin: 1px !important
+
+    &2
+        margin: 2px !important
+
+    &3
+        margin: 3px !important
+
+    &4
+        margin: 4px !important
+
+    &5
+        margin: 5px !important
+
+    &6
+        margin: 6px !important
+
+    &7
+        margin: 7px !important
+
+    &8
+        margin: 8px !important
+
+    &9
+        margin: 9px !important
+
+    &10
+        margin: 10px !important
+
+    &15
+        margin: 15px !important
+
+    &20
+        margin: 20px !important
+
+    &25
+        margin: 25px !important
+
+    &30
+        margin: 30px !important
+
+    &35
+        margin: 35px !important
+
+    &40
+        margin: 40px !important
+
+    &45
+        margin: 45px !important
+
+    &50
+        margin: 50px !important
+
+    &55
+        margin: 55px !important
+
+    &60
+        margin: 60px !important
+
+    &65
+        margin: 65px !important
+
+    &70
+        margin: 70px !important
+
+    &75
+        margin: 75px !important
+
+    &80
+        margin: 80px !important
+
+    &85
+        margin: 85px !important
+
+    &90
+        margin: 90px !important
+
+    &95
+        margin: 95px !important
+
+    &100
+        margin: 100px !important
+
+    &105
+        margin: 105px !important
+
+    &110
+        margin: 110px !important
+
+    &115
+        margin: 115px !important
+
+    &120
+        margin: 120px !important
+
+.mt
+
+    &0
+        margin-top: 0 !important
+
+    &1
+        margin-top: 1px !important
+
+    &2
+        margin-top: 2px !important
+
+    &3
+        margin-top: 3px !important
+
+    &4
+        margin-top: 4px !important
+
+    &5
+        margin-top: 5px !important
+
+    &6
+        margin-top: 6px !important
+
+    &7
+        margin-top: 7px !important
+
+    &8
+        margin-top: 8px !important
+
+    &9
+        margin-top: 9px !important
+
+    &10
+        margin-top: 10px !important
+
+    &15
+        margin-top: 15px !important
+
+    &20
+        margin-top: 20px !important
+
+    &25
+        margin-top: 25px !important
+
+    &30
+        margin-top: 30px !important
+
+    &35
+        margin-top: 35px !important
+
+    &40
+        margin-top: 40px !important
+
+    &45
+        margin-top: 45px !important
+
+    &50
+        margin-top: 50px !important
+
+    &55
+        margin-top: 55px !important
+
+    &60
+        margin-top: 60px !important
+
+    &65
+        margin-top: 65px !important
+
+    &70
+        margin-top: 70px !important
+
+    &75
+        margin-top: 75px !important
+
+    &80
+        margin-top: 80px !important
+
+    &85
+        margin-top: 85px !important
+
+    &90
+        margin-top: 90px !important
+
+    &95
+        margin-top: 95px !important
+
+    &100
+        margin-top: 100px !important
+
+    &105
+        margin-top: 105px !important
+
+    &110
+        margin-top: 110px !important
+
+    &115
+        margin-top: 115px !important
+
+    &120
+        margin-top: 120px !important
+
+.mb
+
+    &0
+        margin-bottom: 0 !important
+
+    &1
+        margin-bottom: 1px !important
+
+    &2
+        margin-bottom: 2px !important
+
+    &3
+        margin-bottom: 3px !important
+
+    &4
+        margin-bottom: 4px !important
+
+    &5
+        margin-bottom: 5px !important
+
+    &6
+        margin-bottom: 6px !important
+
+    &7
+        margin-bottom: 7px !important
+
+    &8
+        margin-bottom: 8px !important
+
+    &9
+        margin-bottom: 9px !important
+
+    &10
+        margin-bottom: 10px !important
+
+    &15
+        margin-bottom: 15px !important
+
+    &20
+        margin-bottom: 20px !important
+
+    &25
+        margin-bottom: 25px !important
+
+    &30
+        margin-bottom: 30px !important
+
+    &35
+        margin-bottom: 35px !important
+
+    &40
+        margin-bottom: 40px !important
+
+    &45
+        margin-bottom: 45px !important
+
+    &50
+        margin-bottom: 50px !important
+
+    &55
+        margin-bottom: 55px !important
+
+    &60
+        margin-bottom: 60px !important
+
+    &65
+        margin-bottom: 65px !important
+
+    &70
+        margin-bottom: 70px !important
+
+    &75
+        margin-bottom: 75px !important
+
+    &80
+        margin-bottom: 80px !important
+
+    &85
+        margin-bottom: 85px !important
+
+    &90
+        margin-bottom: 90px !important
+
+    &95
+        margin-bottom: 95px !important
+
+    &100
+        margin-bottom: 100px !important
+
+    &105
+        margin-bottom: 105px !important
+
+    &110
+        margin-bottom: 110px !important
+
+    &115
+        margin-bottom: 115px !important
+
+    &120
+        margin-bottom: 120px !important
+
+.ml
+
+    &0
+        margin-left: 0 !important
+
+    &1
+        margin-left: 1px !important
+
+    &2
+        margin-left: 2px !important
+
+    &3
+        margin-left: 3px !important
+
+    &4
+        margin-left: 4px !important
+
+    &5
+        margin-left: 5px !important
+
+    &6
+        margin-left: 6px !important
+
+    &7
+        margin-left: 7px !important
+
+    &8
+        margin-left: 8px !important
+
+    &9
+        margin-left: 9px !important
+
+    &10
+        margin-left: 10px !important
+
+    &15
+        margin-left: 15px !important
+
+    &20
+        margin-left: 20px !important
+
+    &25
+        margin-left: 25px !important
+
+    &30
+        margin-left: 30px !important
+
+    &35
+        margin-left: 35px !important
+
+    &40
+        margin-left: 40px !important
+
+    &45
+        margin-left: 45px !important
+
+    &50
+        margin-left: 50px !important
+
+    &55
+        margin-left: 55px !important
+
+    &60
+        margin-left: 60px !important
+
+    &65
+        margin-left: 65px !important
+
+    &70
+        margin-left: 70px !important
+
+    &75
+        margin-left: 75px !important
+
+    &80
+        margin-left: 80px !important
+
+    &85
+        margin-left: 85px !important
+
+    &90
+        margin-left: 90px !important
+
+    &95
+        margin-left: 95px !important
+
+    &100
+        margin-left: 100px !important
+
+    &105
+        margin-left: 105px !important
+
+    &110
+        margin-left: 110px !important
+
+    &115
+        margin-left: 115px !important
+
+    &120
+        margin-left: 120px !important
+
+    &auto
+        margin-left: auto !important
+
+.mr
+
+    &0
+        margin-right: 0 !important
+
+    &1
+        margin-right: 1px !important
+
+    &2
+        margin-right: 2px !important
+
+    &3
+        margin-right: 3px !important
+
+    &4
+        margin-right: 4px !important
+
+    &5
+        margin-right: 5px !important
+
+    &6
+        margin-right: 6px !important
+
+    &7
+        margin-right: 7px !important
+
+    &8
+        margin-right: 8px !important
+
+    &9
+        margin-right: 9px !important
+
+    &10
+        margin-right: 10px !important
+
+    &15
+        margin-right: 15px !important
+
+    &20
+        margin-right: 20px !important
+
+    &25
+        margin-right: 25px !important
+
+    &30
+        margin-right: 30px !important
+
+    &35
+        margin-right: 35px !important
+
+    &40
+        margin-right: 40px !important
+
+    &45
+        margin-right: 45px !important
+
+    &50
+        margin-right: 50px !important
+
+    &55
+        margin-right: 55px !important
+
+    &60
+        margin-right: 60px !important
+
+    &65
+        margin-right: 65px !important
+
+    &70
+        margin-right: 70px !important
+
+    &75
+        margin-right: 75px !important
+
+    &80
+        margin-right: 80px !important
+
+    &85
+        margin-right: 85px !important
+
+    &90
+        margin-right: 90px !important
+
+    &95
+        margin-right: 95px !important
+
+    &100
+        margin-right: 100px !important
+
+    &105
+        margin-right: 105px !important
+
+    &110
+        margin-right: 110px !important
+
+    &115
+        margin-right: 115px !important
+
+    &120
+        margin-right: 120px !important
+
+    &auto
+        margin-right: auto !important
+
+.mx
+
+    &0
+        margin-left: 0 !important
+        margin-right: 0!important
+
+    &1
+        margin-left: 1px !important
+        margin-right: 1px !important
+
+    &2
+        margin-left: 2px !important
+        margin-right: 2px !important
+
+    &3
+        margin-left: 3px !important
+        margin-right: 3px !important
+
+    &4
+        margin-left: 4px !important
+        margin-right: 4px !important
+
+    &5
+        margin-left: 5px !important
+        margin-right: 5px !important
+
+    &6
+        margin-left: 6px !important
+        margin-right: 6px !important
+
+    &7
+        margin-left: 7px !important
+        margin-right: 7px !important
+
+    &8
+        margin-left: 8px !important
+        margin-right: 8px !important
+
+    &9
+        margin-left: 9px !important
+        margin-right: 9px !important
+
+    &10
+        margin-left: 10px !important
+        margin-right: 10px !important
+
+    &15
+        margin-left: 15px !important
+        margin-right: 15px !important
+
+    &20
+        margin-left: 20px !important
+        margin-right: 20px !important
+
+    &25
+        margin-left: 25px !important
+        margin-right: 25px !important
+
+    &30
+        margin-left: 30px !important
+        margin-right: 30px !important
+
+    &35
+        margin-left: 35px !important
+        margin-right: 35px !important
+
+    &40
+        margin-left: 40px !important
+        margin-right: 40px !important
+
+    &45
+        margin-left: 45px !important
+        margin-right: 45px !important
+
+    &50
+        margin-left: 50px !important
+        margin-right: 50px !important
+
+    &55
+        margin-left: 55px !important
+        margin-right: 55px !important
+
+    &60
+        margin-left: 60px !important
+        margin-right: 60px !important
+
+    &65
+        margin-left: 65px !important
+        margin-right: 65px !important
+
+    &70
+        margin-left: 70px !important
+        margin-right: 70px !important
+
+    &75
+        margin-left: 75px !important
+        margin-right: 75px !important
+
+    &80
+        margin-left: 80px !important
+        margin-right: 80px !important
+
+    &85
+        margin-left: 85px !important
+        margin-right: 85px !important
+
+    &90
+        margin-left: 90px !important
+        margin-right: 90px !important
+
+    &95
+        margin-left: 95px !important
+        margin-right: 95px !important
+
+    &100
+        margin-left: 100px !important
+        margin-right: 100px !important
+
+    &105
+        margin-left: 105px !important
+        margin-right: 105px !important
+
+    &110
+        margin-left: 110px !important
+        margin-right: 110px !important
+
+    &115
+        margin-left: 115px !important
+        margin-right: 115px !important
+
+    &120
+        margin-left: 120px !important
+        margin-right: 120px !important
+
+    &auto
+        margin-left: auto !important
+        margin-right: auto !important
+
+.my
+
+    &0
+        margin-top: 0 !important
+        margin-bottom: 0!important
+
+    &1
+        margin-top: 1px !important
+        margin-bottom: 1px !important
+
+    &2
+        margin-top: 2px !important
+        margin-bottom: 2px !important
+
+    &3
+        margin-top: 3px !important
+        margin-bottom: 3px !important
+
+    &4
+        margin-top: 4px !important
+        margin-bottom: 4px !important
+
+    &5
+        margin-top: 5px !important
+        margin-bottom: 5px !important
+
+    &6
+        margin-top: 6px !important
+        margin-bottom: 6px !important
+
+    &7
+        margin-top: 7px !important
+        margin-bottom: 7px !important
+
+    &8
+        margin-top: 8px !important
+        margin-bottom: 8px !important
+
+    &9
+        margin-top: 9px !important
+        margin-bottom: 9px !important
+
+    &10
+        margin-top: 10px !important
+        margin-bottom: 10px !important
+
+    &15
+        margin-top: 15px !important
+        margin-bottom: 15px !important
+
+    &20
+        margin-top: 20px !important
+        margin-bottom: 20px !important
+
+    &25
+        margin-top: 25px !important
+        margin-bottom: 25px !important
+
+    &30
+        margin-top: 30px !important
+        margin-bottom: 30px !important
+
+    &35
+        margin-top: 35px !important
+        margin-bottom: 35px !important
+
+    &40
+        margin-top: 40px !important
+        margin-bottom: 40px !important
+
+    &45
+        margin-top: 45px !important
+        margin-bottom: 45px !important
+
+    &50
+        margin-top: 50px !important
+        margin-bottom: 50px !important
+
+    &55
+        margin-top: 55px !important
+        margin-bottom: 55px !important
+
+    &60
+        margin-top: 60px !important
+        margin-bottom: 60px !important
+
+    &65
+        margin-top: 65px !important
+        margin-bottom: 65px !important
+
+    &70
+        margin-top: 70px !important
+        margin-bottom: 70px !important
+
+    &75
+        margin-top: 75px !important
+        margin-bottom: 75px !important
+
+    &80
+        margin-top: 80px !important
+        margin-bottom: 80px !important
+
+    &85
+        margin-top: 85px !important
+        margin-bottom: 85px !important
+
+    &90
+        margin-top: 90px !important
+        margin-bottom: 90px !important
+
+    &95
+        margin-top: 95px !important
+        margin-bottom: 95px !important
+
+    &100
+        margin-top: 100px !important
+        margin-bottom: 100px !important
+
+    &105
+        margin-top: 105px!important
+        margin-bottom: 105px !important
+
+    &110
+        margin-top: 110px!important
+        margin-bottom: 110px !important
+
+    &115
+        margin-top: 115px!important
+        margin-bottom: 115px !important
+
+    &120
+        margin-top: 120px!important
+        margin-bottom: 120px !important
+
+.center
+    margin-left: auto !important
+    margin-right: auto !important
+
+/*** WIDTH **
+
+.w
+
+    &100
+        width: 100px
+
+    &105
+        width: 105px
+
+    &110
+        width: 110px
+
+    &115
+        width: 115px
+
+    &120
+        width: 120px
+
+    &125
+        width: 125px
+
+    &130
+        width: 130px
+
+    &135
+        width: 135px
+
+    &140
+        width: 140px
+
+    &145
+        width: 145px
+
+    &150
+        width: 150px
+
+    &155
+        width: 155px
+
+    &160
+        width: 160px
+
+    &165
+        width: 165px
+
+    &170
+        width: 170px
+
+    &175
+        width: 175px
+
+    &180
+        width: 180px
+
+    &185
+        width: 185px
+
+    &190
+        width: 190px
+
+    &195
+        width: 195px
+
+    &200
+        width: 200px
+
+    &205
+        width: 205px
+
+    &210
+        width: 210px
+
+    &215
+        width: 215px
+
+    &220
+        width: 220px
+
+    &225
+        width: 225px
+
+    &230
+        width: 230px
+
+    &235
+        width: 235px
+
+    &240
+        width: 240px
+
+    &245
+        width: 245px
+
+    &250
+        width: 250px
+
+    &255
+        width: 255px
+
+    &260
+        width: 260px
+
+    &265
+        width: 265px
+
+    &270
+        width: 270px
+
+    &275
+        width: 275px
+
+    &280
+        width: 280px
+
+    &285
+        width: 285px
+
+    &290
+        width: 290px
+
+    &295
+        width: 295px
+
+    &300
+        width: 300px
+
+    &305
+        width: 305px
+
+    &310
+        width: 310px
+
+    &315
+        width: 315px
+
+    &320
+        width: 320px
+
+    &325
+        width: 325px
+
+    &330
+        width: 330px
+
+    &335
+        width: 335px
+
+    &340
+        width: 340px
+
+    &345
+        width: 345px
+
+    &350
+        width: 350px
+
+    &355
+        width: 355px
+
+    &360
+        width: 360px
+
+    &365
+        width: 365px
+
+    &370
+        width: 370px
+
+    &375
+        width: 375px
+
+    &380
+        width: 380px
+
+    &385
+        width: 385px
+
+    &390
+        width: 390px
+
+    &395
+        width: 395px
+
+    &400
+        width: 400px
+
+    &405
+        width: 405px
+
+    &410
+        width: 410px
+
+    &415
+        width: 415px
+
+    &420
+        width: 420px
+
+    &425
+        width: 425px
+
+    &430
+        width: 430px
+
+    &435
+        width: 435px
+
+    &440
+        width: 440px
+
+    &445
+        width: 445px
+
+    &450
+        width: 450px
+
+    &455
+        width: 455px
+
+    &460
+        width: 460px
+
+    &465
+        width: 465px
+
+    &470
+        width: 470px
+
+    &475
+        width: 475px
+
+    &480
+        width: 480px
+
+    &485
+        width: 485px
+
+    &490
+        width: 490px
+
+    &495
+        width: 495px
+
+    &500
+        width: 500px
+
+    &505
+        width: 505px
+
+    &510
+        width: 510px
+
+    &515
+        width: 515px
+
+    &520
+        width: 520px
+
+    &525
+        width: 525px
+
+    &530
+        width: 530px
+
+    &535
+        width: 535px
+
+    &540
+        width: 540px
+
+    &545
+        width: 545px
+
+    &550
+        width: 550px
+
+    &555
+        width: 555px
+
+    &560
+        width: 560px
+
+    &565
+        width: 565px
+
+    &570
+        width: 570px
+
+    &575
+        width: 575px
+
+    &580
+        width: 580px
+
+    &585
+        width: 585px
+
+    &590
+        width: 590px
+
+    &595
+        width: 595px
+
+    &600
+        width: 600px
+
+    &605
+        width: 605px
+
+    &610
+        width: 610px
+
+    &615
+        width: 615px
+
+    &620
+        width: 620px
+
+    &625
+        width: 625px
+
+    &630
+        width: 630px
+
+    &635
+        width: 635px
+
+    &640
+        width: 640px
+
+    &645
+        width: 645px
+
+    &650
+        width: 650px
+
+    &655
+        width: 655px
+
+    &660
+        width: 660px
+
+    &665
+        width: 665px
+
+    &670
+        width: 670px
+
+    &675
+        width: 675px
+
+    &680
+        width: 680px
+
+    &685
+        width: 685px
+
+    &690
+        width: 690px
+
+    &695
+        width: 695px
+
+    &700
+        width: 700px
+
+    &705
+        width: 705px
+
+    &710
+        width: 710px
+
+    &715
+        width: 715px
+
+    &720
+        width: 720px
+
+    &725
+        width: 725px
+
+    &730
+        width: 730px
+
+    &735
+        width: 735px
+
+    &740
+        width: 740px
+
+    &745
+        width: 745px
+
+    &750
+        width: 750px
+
+    &755
+        width: 755px
+
+    &760
+        width: 760px
+
+    &765
+        width: 765px
+
+    &770
+        width: 770px
+
+    &775
+        width: 775px
+
+    &780
+        width: 780px
+
+    &785
+        width: 785px
+
+    &790
+        width: 790px
+
+    &795
+        width: 795px
+
+    &800
+        width: 800px
+
+    &805
+        width: 805px
+
+    &810
+        width: 810px
+
+    &815
+        width: 815px
+
+    &820
+        width: 820px
+
+    &825
+        width: 825px
+
+    &830
+        width: 830px
+
+    &835
+        width: 835px
+
+    &840
+        width: 840px
+
+    &845
+        width: 845px
+
+    &850
+        width: 850px
+
+    &855
+        width: 855px
+
+    &860
+        width: 860px
+
+    &865
+        width: 865px
+
+    &870
+        width: 870px
+
+    &875
+        width: 875px
+
+    &880
+        width: 880px
+
+    &885
+        width: 885px
+
+    &890
+        width: 890px
+
+    &895
+        width: 895px
+
+    &900
+        width: 900px
+
+    &905
+        width: 905px
+
+    &910
+        width: 910px
+
+    &915
+        width: 915px
+
+    &920
+        width: 920px
+
+    &925
+        width: 925px
+
+    &930
+        width: 930px
+
+    &935
+        width: 935px
+
+    &940
+        width: 940px
+
+    &945
+        width: 945px
+
+    &950
+        width: 950px
+
+    &955
+        width: 955px
+
+    &960
+        width: 960px
+
+    &1k
+        width: 1000px
+
+    &1k160
+        width: 1160px
+
+    &1k2
+        width: 1200px
+
+    &1,
+    &full
+        width: 100%
+
+    &auto
+        width: auto
+
+.h
+
+    &150
+        height: 150px
+
+    &180
+        height: 180px
+
+    &200
+        height: 200px
+
+    &220
+        height: 220px
+
+    &210
+        height: 210px
+
+    &240
+        height: 240px
+
+    &250
+        height: 250px
+
+    &300
+        height: 300px
+
+    &320
+        height: 320px
+
+    &330
+        height: 330px
+
+    &340
+        height: 300px
+
+    &350
+        height: 350px
+
+    &360
+        height: 360px
+
+    &380
+        height: 360px
+
+    &400
+        height: 400px
+
+    &420
+        height: 420px
+
+    &440
+        height: 440px
+
+    &450
+        height: 450px
+
+    &460
+        height: 460px
+
+    &480
+        height: 480px
+
+    &500
+        height: 500px
+
+    &540
+        height: 540px
+
+    &600
+        height: 600px
+
+    &640
+        height: 640px
+
+    &1,
+    &full
+        height: 100%
+
+    &auto
+        height: auto
+
+/*** Center middle **
+
+.ce
+    position: absolute
+    top: 50%
+    left: 50%
+    -webkit-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
+
+.vegas-animation-mykenburns
+    -webkit-animation: mykenburns cubic-bezier(0, 0, 0.58, 1) 1s
+    animation: mykenburns cubic-bezier(0, 0, 0.58, 1) 1s
+
+@-webkit-keyframes mykenburns
+  0%
+    -webkit-transform: scale(1.2) translate(0, -5%)
+    transform: scale(1.2) translate(0, -5%)
+
+  100%
+    -webkit-transform: scale(1) translate(0, 0)
+    transform: scale(1) translate(0, 0)
+
+@keyframes mykenburns
+    0%
+        -webkit-transform: scale(1.2) translate(0, -5%)
+        transform: scale(1.2) translate(0, -5%)
+
+    100%
+        -webkit-transform: scale(1) translate(0, 0)
+        transform: scale(1) translate(0, 0)
+
+.ibg
+    text-indent: 100%
+    white-space: nowrap
+    overflow: hidden
+    background-repeat: no-repeat
+    background-position: center
+    -webkit-box-sizing: content-box
+    box-sizing: content-box
+
+.l-flex
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+
+.f-ce
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    -ms-flex-line-pack: center
+    align-content: center
+
+.l
+
+    &-2
+        width: 50%
+
+    &-3
+        width: calc(100% / 3)
+
+    &-4
+        width: 25%
+
+    &-5
+        width: 20%
+
+.p-delay
+
+    &_1s
+        -webkit-animation-delay: 0.1s !important
+        animation-delay: 0.1s !important
+
+    &_2s
+        -webkit-animation-delay: 0.2s !important
+        animation-delay: 0.2s !important
+
+    &_3s
+        -webkit-animation-delay: 0.3s !important
+        animation-delay: 0.3s !important
+
+    &_4s
+        -webkit-animation-delay: 0.4s !important
+        animation-delay: 0.4s !important
+
+    &_5s
+        -webkit-animation-delay: 0.5s !important
+        animation-delay: 0.5s !important
+
+    &_6s
+        -webkit-animation-delay: 0.6s !important
+        animation-delay: 0.6s !important
+
+    &_7s
+        -webkit-animation-delay: 0.7s !important
+        animation-delay: 0.7s !important
+
+    &_8s
+        -webkit-animation-delay: 0.8s !important
+        animation-delay: 0.8s !important
+
+    &_9s
+        -webkit-animation-delay: 0.9s !important
+        animation-delay: 0.9s !important
+
+    &_10s
+        -webkit-animation-delay: 1s !important
+        animation-delay: 1s !important
+
+    &_11s
+        -webkit-animation-delay: 1.1s !important
+        animation-delay: 1.1s !important
+
+    &_12s
+        -webkit-animation-delay: 1.2s !important
+        animation-delay: 1.2s !important
+
+    &_13s
+        -webkit-animation-delay: 1.3s !important
+        animation-delay: 1.3s !important
+
+    &_14s
+        -webkit-animation-delay: 1.4s !important
+        animation-delay: 1.4s !important
+
+    &_15s
+        -webkit-animation-delay: 1.5s !important
+        animation-delay: 1.5s !important
+
+    &_16s
+        -webkit-animation-delay: 1.6s !important
+        animation-delay: 1.6s !important
+
+    &_17s
+        -webkit-animation-delay: 1.7s !important
+        animation-delay: 1.7s !important
+
+    &_18s
+        -webkit-animation-delay: 1.8s !important
+        animation-delay: 1.8s !important
+
+    &_19s
+        -webkit-animation-delay: 1.9s !important
+        animation-delay: 1.9s !important
+
+    &_20s
+        -webkit-animation-delay: 2s !important
+        animation-delay: 2s !important
+
+.p-ani
+
+    &-fadeInUp
+        -webkit-animation: p-ani-fadeInUp 1.5s ease 0s both 1 normal
+        animation: p-ani-fadeInUp 1.5s ease 0s both 1 normal
+        visibility: visible !important
+
+    &-fadeIn
+        -webkit-animation: p-ani-fadeIn 1.5s ease 0s both 1 normal
+        animation: p-ani-fadeIn 1.5s ease 0s both 1 normal
+        visibility: visible !important
+
+    &-fadeInBlur
+        -webkit-animation: p-ani-fadeInBlur 2s ease 0s backwards 1 normal
+        animation: p-ani-fadeInBlur 2s ease 0s backwards 1 normal
+        visibility: visible !important
+
+    &-fadeInScale
+        -webkit-animation: p-ani-fadeInScale 2s ease 0s backwards 1 normal
+        animation: p-ani-fadeInScale 2s ease 0s backwards 1 normal
+        visibility: visible !important
+
+    &-fadeInLeft
+        -webkit-animation: p-ani-fadeInLeft 1.5s ease 0s backwards 1 normal
+        animation: p-ani-fadeInLeft 1.5s ease 0s backwards 1 normal
+        visibility: visible !important
+
+    &-fadeOut
+        -webkit-animation: p-ani-fadeOut 1.5s ease 0s both 1 normal
+        animation: p-ani-fadeOut 1.5s ease 0s both 1 normal
+        visibility: hidden !important
+
+    &-width
+        -webkit-animation-name: p-ani-width
+        animation-name: p-ani-width
+        -webkit-animation-duration: 1s
+        animation-duration: 1s
+        -webkit-animation-timing-function: ease
+        animation-timing-function: ease
+        -webkit-animation-delay: 0s
+        animation-delay: 0s
+        -webkit-animation-iteration-count: 1
+        animation-iteration-count: 1
+        -webkit-animation-direction: normal
+        animation-direction: normal
+        -webkit-animation-fill-mode: both
+        animation-fill-mode: both
+        -webkit-animation-play-state: running
+        animation-play-state: running
+        visibility: visible !important
+
+    &-height
+        -webkit-animation: p-ani-height 1s ease 0s both 1 normal
+        animation: p-ani-height 1s ease 0s both 1 normal
+        visibility: visible !important
+
+    &-slide-scaleUp
+        -webkit-animation-name: p-ani-slide-scaleUp
+        animation-name: p-ani-slide-scaleUp
+        -webkit-animation-duration: 15s
+        animation-duration: 15s
+        -webkit-animation-timing-function: linear
+        animation-timing-function: linear
+        -webkit-animation-delay: 0s
+        animation-delay: 0s
+        -webkit-animation-iteration-count: 1
+        animation-iteration-count: 1
+        -webkit-animation-direction: normal
+        animation-direction: normal
+        -webkit-animation-fill-mode: both
+        animation-fill-mode: both
+        -webkit-animation-play-state: running
+        animation-play-state: running
+
+.p-animation
+
+    &__dummybox-gray
+        position: absolute
+        top: 0
+        left: 0
+        z-index: -1
+        background-color: #eee
+        width: 100%
+        height: 100%
+
+    &__dummybox-white
+        position: absolute
+        top: 0
+        left: 0
+        z-index: -1
+        background-color: #fff
+        width: 100%
+        height: 100%
+
+@keyframes p-ani-fadeIn
+    0%
+        opacity: 0
+
+    100%
+        opacity: 1
+
+@keyframes p-ani-fadeOut
+    0%
+        opacity: 1
+
+    100%
+        display: none
+        opacity: 0.5
+
+@keyframes p-ani-fadeInUp
+    0%
+        opacity: 0
+        -webkit-transform: translateY(20px)
+        transform: translateY(20px)
+
+    100%
+        opacity: 1
+        -webkit-transform: none
+        transform: none
+
+@keyframes p-ani-fadeInBlur
+    0%
+        opacity: 0
+        -webkit-filter: blur(5px)
+        filter: blur(5px)
+        -webkit-transform: scale(1.03)
+        transform: scale(1.03)
+
+    100%
+        opacity: 1
+        -webkit-filter: none
+        filter: none
+        -webkit-transform: none
+        transform: none
+
+@keyframes p-ani-fadeInScale
+    0%
+        opacity: 0
+        -webkit-transform: scale(1.04)
+        transform: scale(1.04)
+
+    100%
+        opacity: 1
+        -webkit-transform: none
+        transform: none
+
+@keyframes p-ani-fadeInLeft
+    0%
+        opacity: 0
+        -webkit-transform: translateX(-20px)
+        transform: translateX(-20px)
+
+    100%
+        opacity: 1
+        -webkit-transform: none
+        transform: none
+
+@keyframes p-ani-width
+    0%
+        width: 0%
+
+    100%
+        width: 100%
+
+@keyframes p-ani-height
+    0%
+        height: 0%
+
+    100%
+        height: 100%
+
+@keyframes p-ani-slide-scaleUp
+    100%
+        -webkit-transform: scaleX(1.2) scaleY(1.2)
+        transform: scaleX(1.2) scaleY(1.2)
+
+/* new style */
+
+.radius
+
+    &2
+        border-radius: 2px!important
+
+        &.radius-left
+            border-radius: 0 2px 2px 0!important
+
+        &.radius-right
+            border-radius: 2px 0 0 2px!important
+
+    &5
+        border-radius: 5px!important
+
+        &.radius-left
+            border-radius: 0 5px 5px 0!important
+
+        &.radius-right
+            border-radius: 5px 0 0 5px!important
+
+    &8
+        border-radius: 8px!important
+
+        &.radius-left
+            border-radius: 0 8px 8px 0!important
+
+        &.radius-right
+            border-radius: 8px 0 0 8px!important
+
+    &10
+        border-radius: 10px!important
+
+        &.radius-left
+            border-radius: 0 10px 10px 0!important
+
+        &.radius-right
+            border-radius: 10px 0 0 10px!important
+
+    &cl
+        border-radius: 50%!important
+
+    &0
+        border-radius: 0!important
+
+.bd
+    border: 1px solid !important
+
+    &top
+        border-top: 1px solid !important
+
+        &0
+            border-top: 0 !important
+
+    &right
+        border-right: 1px solid !important
+
+        &0
+            border-right: 0 !important
+
+    &bottom
+        border-bottom: 1px solid !important
+
+        &0
+            border-bottom: 0 !important
+
+    &left
+        border-left: 1px solid !important
+
+        &0
+            border-left: 0 !important
+
+    &0
+        border: 0 !important
+
+.d
+
+    &-none
+        display: none !important
+
+    &-inline-block
+        display: inline-block !important
+
+    &-block
+        display: block !important
+
+    &-flex
+        display: flex !important
+
+    &-inline-flex
+        display: inline-flex !important
+
+.flex
+
+    &-row
+        flex-direction: row !important
+
+    &-column
+        flex-direction: column !important
+
+    &-row-reverse
+        flex-direction: row-reverse !important
+
+    &-column-reverse
+        flex-direction: column-reverse !important
+
+    &-wrap
+        flex-wrap: wrap !important
+
+    &-nowrap
+        flex-wrap: nowrap !important
+
+.justify-content
+
+    &-start
+        justify-content: flex-start !important
+
+    &-end
+        justify-content: flex-end !important
+
+    &-center
+        justify-content: center !important
+
+    &-between
+        justify-content: space-between !important
+
+    &-around
+        justify-content: space-around !important
+
+.align-items
+
+    &-start
+        align-items: flex-start !important
+
+    &-end
+        align-items: flex-end !important
+
+    &-center
+        align-items: center !important
+
+    &-baseline
+        align-items: baseline !important
+
+    &-stretch
+        align-items: stretch !important
+
+.align-content
+
+    &-start
+        align-content: flex-start !important
+
+    &-end
+        align-content: flex-end !important
+
+    &-center
+        align-content: center !important
+
+    &-between
+        align-content: space-between !important
+
+    &-around
+        align-content: space-around !important
+
+    &-stretch
+        align-content: stretch !important
+
+.align-self
+
+    &-auto
+        align-self: auto !important
+
+    &-start
+        align-self: flex-start !important
+
+    &-end
+        align-self: flex-end !important
+
+    &-center
+        align-self: center !important
+
+    &-baseline
+        align-self: baseline !important
+
+    &-stretch
+        align-self: stretch !important
+
+/*** CLEAR-FIX **
+
+.clearfix
+    zoom: 1
+
+    &:after
+        clear: both
+        content: "."
+        display: block
+        height: 0
+        line-height: 0
+        visibility: hidden
+
+/*** ROLL-OVER  **
+
+.alphaOver a:hover img
+    opacity: 0.7
+    filter: alpha(opacity = 70)
+    -moz-opacity: 0.7
+
+.alphaOver_png a:hover img
+    opacity: 0.7
+    -moz-opacity: 0.7
+
+.none
+    opacity: 0.4
+    filter: alpha(opacity = 40)
+    -moz-opacity: 0.4
+
+/* responsive master */
+
+@media only screen and (max-width: 992px)
+    .text
+
+        &8tb
+            font-size: 0.8rem!important
+
+        &9tb
+            font-size: 0.9rem!important
+
+        &10tb
+            font-size: 1rem!important
+
+        &11tb
+            font-size: 1.1rem!important
+
+        &12tb
+            font-size: 1.2rem!important
+
+        &13tb
+            font-size: 1.3rem!important
+
+        &14tb
+            font-size: 1.4rem!important
+
+        &15tb
+            font-size: 1.5rem!important
+
+        &16tb
+            font-size: 1.6rem!important
+
+        &18tb
+            font-size: 1.8rem!important
+
+        &20tb
+            font-size: 2rem!important
+
+        &22tb
+            font-size: 2.2rem!important
+
+        &24tb
+            font-size: 2.4rem!important
+
+        &25tb
+            font-size: 2.5rem!important
+
+        &26tb
+            font-size: 2.6rem!important
+
+        &28tb
+            font-size: 2.8rem!important
+
+        &30tb
+            font-size: 3rem!important
+
+        &32tb
+            font-size: 3.2rem!important
+
+        &34tb
+            font-size: 3.4rem!important
+
+        &36tb
+            font-size: 3.6rem!important
+
+        &38tb
+            font-size: 3.8rem!important
+
+        &40tb
+            font-size: 4rem!important
+
+        &42tb
+            font-size: 4.2rem!important
+
+        &43tb
+            font-size: 4.3rem!important
+
+        &44tb
+            font-size: 4.4rem!important
+
+        &45tb
+            font-size: 4.5rem!important
+
+        &46tb
+            font-size: 4.6rem!important
+
+        &48tb
+            font-size: 4.8rem!important
+
+        &50tb
+            font-size: 5rem!important
+
+        &52tb
+            font-size: 5.2rem!important
+
+        &54tb
+            font-size: 5.4rem!important
+
+        &58tb
+            font-size: 5.8rem!important
+
+        &60tb
+            font-size: 6rem!important
+
+        &62tb
+            font-size: 6.2rem!important
+
+        &64tb
+            font-size: 6.4rem!important
+
+        &68tb
+            font-size: 6.8rem!important
+
+        &70tb
+            font-size: 7rem!important
+
+        &72tb
+            font-size: 7.2rem!important
+
+        &74tb
+            font-size: 7.4rem!important
+
+        &80tb
+            font-size: 8rem!important
+
+        &82tb
+            font-size: 8.2rem!important
+
+        &84tb
+            font-size: 8.4rem!important
+
+        &90tb
+            font-size: 9rem!important
+
+        &91tb
+            font-size: 9.1rem!important
+
+        &96tb
+            font-size: 9.6rem!important
+
+    .p
+
+        &0tb
+            padding: 0 !important
+
+        &1tb
+            padding: 1px !important
+
+        &2tb
+            padding: 2px !important
+
+        &3tb
+            padding: 3px !important
+
+        &4tb
+            padding: 4px !important
+
+        &5tb
+            padding: 5px !important
+
+        &6tb
+            padding: 6px !important
+
+        &7tb
+            padding: 7px !important
+
+        &8tb
+            padding: 8px !important
+
+        &9tb
+            padding: 9px !important
+
+        &10tb
+            padding: 10px !important
+
+        &15tb
+            padding: 15px !important
+
+        &20tb
+            padding: 20px !important
+
+        &25tb
+            padding: 25px !important
+
+        &30tb
+            padding: 30px !important
+
+        &35tb
+            padding: 35px !important
+
+        &40tb
+            padding: 40px !important
+
+        &45tb
+            padding: 45px !important
+
+        &50tb
+            padding: 50px !important
+
+        &55tb
+            padding: 55px !important
+
+        &60tb
+            padding: 60px !important
+
+        &65tb
+            padding: 65px !important
+
+        &70tb
+            padding: 70px !important
+
+        &75tb
+            padding: 75px !important
+
+        &80tb
+            padding: 80px !important
+
+        &85tb
+            padding: 85px !important
+
+        &90tb
+            padding: 90px !important
+
+        &95tb
+            padding: 95px !important
+
+        &100tb
+            padding: 100px !important
+
+        &105tb
+            padding: 105px !important
+
+        &110tb
+            padding: 110px !important
+
+        &115tb
+            padding: 115px !important
+
+        &120tb
+            padding: 120px !important
+
+    .pt
+
+        &0tb
+            padding-top: 0 !important
+
+        &1tb
+            padding-top: 1px !important
+
+        &2tb
+            padding-top: 2px !important
+
+        &3tb
+            padding-top: 3px !important
+
+        &4tb
+            padding-top: 4px !important
+
+        &5tb
+            padding-top: 5px !important
+
+        &6tb
+            padding-top: 6px !important
+
+        &7tb
+            padding-top: 7px !important
+
+        &8tb
+            padding-top: 8px !important
+
+        &9tb
+            padding-top: 9px !important
+
+        &10tb
+            padding-top: 10px !important
+
+        &15tb
+            padding-top: 15px !important
+
+        &20tb
+            padding-top: 20px !important
+
+        &25tb
+            padding-top: 25px !important
+
+        &30tb
+            padding-top: 30px !important
+
+        &35tb
+            padding-top: 35px !important
+
+        &40tb
+            padding-top: 40px !important
+
+        &45tb
+            padding-top: 45px !important
+
+        &50tb
+            padding-top: 50px !important
+
+        &55tb
+            padding-top: 55px !important
+
+        &60tb
+            padding-top: 60px !important
+
+        &65tb
+            padding-top: 65px !important
+
+        &70tb
+            padding-top: 70px !important
+
+        &75tb
+            padding-top: 75px !important
+
+        &80tb
+            padding-top: 80px !important
+
+        &85tb
+            padding-top: 85px !important
+
+        &90tb
+            padding-top: 90px !important
+
+        &95tb
+            padding-top: 95px !important
+
+        &100tb
+            padding-top: 100px !important
+
+        &105tb
+            padding-top: 105px !important
+
+        &110tb
+            padding-top: 110px !important
+
+        &115tb
+            padding-top: 115px !important
+
+        &120tb
+            padding-top: 120px !important
+
+    .pb
+
+        &0tb
+            padding-bottom: 0 !important
+
+        &1tb
+            padding-bottom: 1px !important
+
+        &2tb
+            padding-bottom: 2px !important
+
+        &3tb
+            padding-bottom: 3px !important
+
+        &4tb
+            padding-bottom: 4px !important
+
+        &5tb
+            padding-bottom: 5px !important
+
+        &6tb
+            padding-bottom: 6px !important
+
+        &7tb
+            padding-bottom: 7px !important
+
+        &8tb
+            padding-bottom: 8px !important
+
+        &9tb
+            padding-bottom: 9px !important
+
+        &10tb
+            padding-bottom: 10px !important
+
+        &15tb
+            padding-bottom: 15px !important
+
+        &20tb
+            padding-bottom: 20px !important
+
+        &25tb
+            padding-bottom: 25px !important
+
+        &30tb
+            padding-bottom: 30px !important
+
+        &35tb
+            padding-bottom: 35px !important
+
+        &40tb
+            padding-bottom: 40px !important
+
+        &45tb
+            padding-bottom: 45px !important
+
+        &50tb
+            padding-bottom: 50px !important
+
+        &55tb
+            padding-bottom: 55px !important
+
+        &60tb
+            padding-bottom: 60px !important
+
+        &65tb
+            padding-bottom: 65px !important
+
+        &70tb
+            padding-bottom: 70px !important
+
+        &75tb
+            padding-bottom: 75px !important
+
+        &80tb
+            padding-bottom: 80px !important
+
+        &85tb
+            padding-bottom: 85px !important
+
+        &90tb
+            padding-bottom: 90px !important
+
+        &95tb
+            padding-bottom: 95px !important
+
+        &100tb
+            padding-bottom: 100px !important
+
+        &105tb
+            padding-bottom: 105px !important
+
+        &110tb
+            padding-bottom: 110px !important
+
+        &115tb
+            padding-bottom: 115px !important
+
+        &120tb
+            padding-bottom: 120px !important
+
+    .pr
+
+        &0tb
+            padding-right: 0 !important
+
+        &1tb
+            padding-right: 1px !important
+
+        &2tb
+            padding-right: 2px !important
+
+        &3tb
+            padding-right: 3px !important
+
+        &4tb
+            padding-right: 4px !important
+
+        &5tb
+            padding-right: 5px !important
+
+        &6tb
+            padding-right: 6px !important
+
+        &7tb
+            padding-right: 7px !important
+
+        &8tb
+            padding-right: 8px !important
+
+        &9tb
+            padding-right: 9px !important
+
+        &10tb
+            padding-right: 10px !important
+
+        &15tb
+            padding-right: 15px !important
+
+        &20tb
+            padding-right: 20px !important
+
+        &25tb
+            padding-right: 25px !important
+
+        &30tb
+            padding-right: 30px !important
+
+        &35tb
+            padding-right: 35px !important
+
+        &40tb
+            padding-right: 40px !important
+
+        &45tb
+            padding-right: 45px !important
+
+        &50tb
+            padding-right: 50px !important
+
+        &55tb
+            padding-right: 55px !important
+
+        &60tb
+            padding-right: 60px !important
+
+        &65tb
+            padding-right: 65px !important
+
+        &70tb
+            padding-right: 70px !important
+
+        &75tb
+            padding-right: 75px !important
+
+        &80tb
+            padding-right: 80px !important
+
+        &85tb
+            padding-right: 85px !important
+
+        &90tb
+            padding-right: 90px !important
+
+        &95tb
+            padding-right: 95px !important
+
+        &100tb
+            padding-right: 100px !important
+
+        &105tb
+            padding-right: 105px !important
+
+        &110tb
+            padding-right: 110px !important
+
+        &115tb
+            padding-right: 115px !important
+
+        &120tb
+            padding-right: 120px !important
+
+    .pl
+
+        &0tb
+            padding-left: 0 !important
+
+        &1tb
+            padding-left: 1px !important
+
+        &2tb
+            padding-left: 2px !important
+
+        &3tb
+            padding-left: 3px !important
+
+        &4tb
+            padding-left: 4px !important
+
+        &5tb
+            padding-left: 5px !important
+
+        &6tb
+            padding-left: 6px !important
+
+        &7tb
+            padding-left: 7px !important
+
+        &8tb
+            padding-left: 8px !important
+
+        &9tb
+            padding-left: 9px !important
+
+        &10tb
+            padding-left: 10px !important
+
+        &15tb
+            padding-left: 15px !important
+
+        &20tb
+            padding-left: 20px !important
+
+        &25tb
+            padding-left: 25px !important
+
+        &30tb
+            padding-left: 30px !important
+
+        &35tb
+            padding-left: 35px !important
+
+        &40tb
+            padding-left: 40px !important
+
+        &45tb
+            padding-left: 45px !important
+
+        &50tb
+            padding-left: 50px !important
+
+        &55tb
+            padding-left: 55px !important
+
+        &60tb
+            padding-left: 60px !important
+
+        &65tb
+            padding-left: 65px !important
+
+        &70tb
+            padding-left: 70px !important
+
+        &75tb
+            padding-left: 75px !important
+
+        &80tb
+            padding-left: 80px !important
+
+        &85tb
+            padding-left: 85px !important
+
+        &90tb
+            padding-left: 90px !important
+
+        &95tb
+            padding-left: 95px !important
+
+        &100tb
+            padding-left: 100px !important
+
+        &105tb
+            padding-left: 105px !important
+
+        &110tb
+            padding-left: 110px !important
+
+        &115tb
+            padding-left: 115px !important
+
+        &120tb
+            padding-left: 120px !important
+
+    .px
+
+        &0tb
+            padding-left: 0 !important
+            padding-right: 0 !important
+
+        &1tb
+            padding-left: 1px !important
+            padding-right: 1px !important
+
+        &2tb
+            padding-left: 2px !important
+            padding-right: 2px !important
+
+        &3tb
+            padding-left: 3px !important
+            padding-right: 3px !important
+
+        &4tb
+            padding-left: 4px !important
+            padding-right: 4px !important
+
+        &5tb
+            padding-left: 5px !important
+            padding-right: 5px !important
+
+        &6tb
+            padding-left: 6px !important
+            padding-right: 6px !important
+
+        &7tb
+            padding-left: 7px !important
+            padding-right: 7px !important
+
+        &8tb
+            padding-left: 8px !important
+            padding-right: 8px !important
+
+        &9tb
+            padding-left: 9px !important
+            padding-right: 9px !important
+
+        &10tb
+            padding-left: 10px !important
+            padding-right: 10px !important
+
+        &15tb
+            padding-left: 15px !important
+            padding-right: 15px !important
+
+        &20tb
+            padding-left: 20px !important
+            padding-right: 20px !important
+
+        &25tb
+            padding-left: 25px !important
+            padding-right: 25px !important
+
+        &30tb
+            padding-left: 30px !important
+            padding-right: 30px !important
+
+        &35tb
+            padding-left: 35px !important
+            padding-right: 35px !important
+
+        &40tb
+            padding-left: 40px !important
+            padding-right: 40px !important
+
+        &45tb
+            padding-left: 45px !important
+            padding-right: 45px !important
+
+        &50tb
+            padding-left: 50px !important
+            padding-right: 50px !important
+
+        &55tb
+            padding-left: 55px !important
+            padding-right: 55px !important
+
+        &60tb
+            padding-left: 60px !important
+            padding-right: 60px !important
+
+        &65tb
+            padding-left: 65px !important
+            padding-right: 65px !important
+
+        &70tb
+            padding-left: 70px !important
+            padding-right: 70px !important
+
+        &75tb
+            padding-left: 75px !important
+            padding-right: 75px !important
+
+        &80tb
+            padding-left: 80px !important
+            padding-right: 80px !important
+
+        &85tb
+            padding-left: 85px !important
+            padding-right: 85px !important
+
+        &90tb
+            padding-left: 90px !important
+            padding-right: 90px !important
+
+        &95tb
+            padding-left: 95px !important
+            padding-right: 95px !important
+
+        &100tb
+            padding-left: 100px !important
+            padding-right: 100px !important
+
+        &105tb
+            padding-left: 105px !important
+            padding-right: 105px !important
+
+        &110tb
+            padding-left: 110px !important
+            padding-right: 110px !important
+
+        &115tb
+            padding-left: 115px !important
+            padding-right: 115px !important
+
+        &120tb
+            padding-left: 120px !important
+            padding-right: 120px !important
+
+    .py
+
+        &0tb
+            padding-top: 0!important
+            padding-bottom: 0 !important
+
+        &1tb
+            padding-top: 1px!important
+            padding-bottom: 1px !important
+
+        &2tb
+            padding-top: 2px!important
+            padding-bottom: 2px !important
+
+        &3tb
+            padding-top: 3px!important
+            padding-bottom: 3px !important
+
+        &4tb
+            padding-top: 4px!important
+            padding-bottom: 4px !important
+
+        &5tb
+            padding-top: 5px!important
+            padding-bottom: 5px !important
+
+        &6tb
+            padding-top: 6px!important
+            padding-bottom: 6px !important
+
+        &7tb
+            padding-top: 7px!important
+            padding-bottom: 7px !important
+
+        &8tb
+            padding-top: 8px!important
+            padding-bottom: 8px !important
+
+        &9tb
+            padding-top: 9px!important
+            padding-bottom: 9px !important
+
+        &10tb
+            padding-top: 10px!important
+            padding-bottom: 10px !important
+
+        &15tb
+            padding-top: 15px!important
+            padding-bottom: 15px !important
+
+        &20tb
+            padding-top: 20px!important
+            padding-bottom: 20px !important
+
+        &25tb
+            padding-top: 25px!important
+            padding-bottom: 25px !important
+
+        &30tb
+            padding-top: 30px!important
+            padding-bottom: 30px !important
+
+        &35tb
+            padding-top: 35px!important
+            padding-bottom: 35px !important
+
+        &40tb
+            padding-top: 40px!important
+            padding-bottom: 40px !important
+
+        &45tb
+            padding-top: 45px!important
+            padding-bottom: 45px !important
+
+        &50tb
+            padding-top: 50px!important
+            padding-bottom: 50px !important
+
+        &55tb
+            padding-top: 55px!important
+            padding-bottom: 55px !important
+
+        &60tb
+            padding-top: 60px!important
+            padding-bottom: 60px !important
+
+        &65tb
+            padding-top: 65px!important
+            padding-bottom: 65px !important
+
+        &70tb
+            padding-top: 70px!important
+            padding-bottom: 70px !important
+
+        &75tb
+            padding-top: 75px!important
+            padding-bottom: 75px !important
+
+        &80tb
+            padding-top: 80px!important
+            padding-bottom: 80px !important
+
+        &85tb
+            padding-top: 85px!important
+            padding-bottom: 85px !important
+
+        &90tb
+            padding-top: 90px!important
+            padding-bottom: 90px !important
+
+        &95tb
+            padding-top: 95px!important
+            padding-bottom: 95px !important
+
+        &100tb
+            padding-top: 100px!important
+            padding-bottom: 100px !important
+
+        &105tb
+            padding-top: 105px!important
+            padding-bottom: 105px !important
+
+        &110tb
+            padding-top: 110px!important
+            padding-bottom: 110px !important
+
+        &115tb
+            padding-top: 115px!important
+            padding-bottom: 115px !important
+
+        &120tb
+            padding-top: 120px!important
+            padding-bottom: 120px !important
+
+    .m
+
+        &0tb
+            margin: 0 !important
+
+        &1tb
+            margin: 1px !important
+
+        &2tb
+            margin: 2px !important
+
+        &3tb
+            margin: 3px !important
+
+        &4tb
+            margin: 4px !important
+
+        &5tb
+            margin: 5px !important
+
+        &6tb
+            margin: 6px !important
+
+        &7tb
+            margin: 7px !important
+
+        &8tb
+            margin: 8px !important
+
+        &9tb
+            margin: 9px !important
+
+        &10tb
+            margin: 10px !important
+
+        &15tb
+            margin: 15px !important
+
+        &20tb
+            margin: 20px !important
+
+        &25tb
+            margin: 25px !important
+
+        &30tb
+            margin: 30px !important
+
+        &35tb
+            margin: 35px !important
+
+        &40tb
+            margin: 40px !important
+
+        &45tb
+            margin: 45px !important
+
+        &50tb
+            margin: 50px !important
+
+        &55tb
+            margin: 55px !important
+
+        &60tb
+            margin: 60px !important
+
+        &65tb
+            margin: 65px !important
+
+        &70tb
+            margin: 70px !important
+
+        &75tb
+            margin: 75px !important
+
+        &80tb
+            margin: 80px !important
+
+        &85tb
+            margin: 85px !important
+
+        &90tb
+            margin: 90px !important
+
+        &95tb
+            margin: 95px !important
+
+        &100tb
+            margin: 100px !important
+
+        &105tb
+            margin: 105px !important
+
+        &110tb
+            margin: 110px !important
+
+        &115tb
+            margin: 115px !important
+
+        &120tb
+            margin: 120px !important
+
+    .mt
+
+        &0tb
+            margin-top: 0 !important
+
+        &1tb
+            margin-top: 1px !important
+
+        &2tb
+            margin-top: 2px !important
+
+        &3tb
+            margin-top: 3px !important
+
+        &4tb
+            margin-top: 4px !important
+
+        &5tb
+            margin-top: 5px !important
+
+        &6tb
+            margin-top: 6px !important
+
+        &7tb
+            margin-top: 7px !important
+
+        &8tb
+            margin-top: 8px !important
+
+        &9tb
+            margin-top: 9px !important
+
+        &10tb
+            margin-top: 10px !important
+
+        &15tb
+            margin-top: 15px !important
+
+        &20tb
+            margin-top: 20px !important
+
+        &25tb
+            margin-top: 25px !important
+
+        &30tb
+            margin-top: 30px !important
+
+        &35tb
+            margin-top: 35px !important
+
+        &40tb
+            margin-top: 40px !important
+
+        &45tb
+            margin-top: 45px !important
+
+        &50tb
+            margin-top: 50px !important
+
+        &55tb
+            margin-top: 55px !important
+
+        &60tb
+            margin-top: 60px !important
+
+        &65tb
+            margin-top: 65px !important
+
+        &70tb
+            margin-top: 70px !important
+
+        &75tb
+            margin-top: 75px !important
+
+        &80tb
+            margin-top: 80px !important
+
+        &85tb
+            margin-top: 85px !important
+
+        &90tb
+            margin-top: 90px !important
+
+        &95tb
+            margin-top: 95px !important
+
+        &100tb
+            margin-top: 100px !important
+
+        &105tb
+            margin-top: 105px !important
+
+        &110tb
+            margin-top: 110px !important
+
+        &115tb
+            margin-top: 115px !important
+
+        &120tb
+            margin-top: 120px !important
+
+    .mb
+
+        &0tb
+            margin-bottom: 0 !important
+
+        &1tb
+            margin-bottom: 1px !important
+
+        &2tb
+            margin-bottom: 2px !important
+
+        &3tb
+            margin-bottom: 3px !important
+
+        &4tb
+            margin-bottom: 4px !important
+
+        &5tb
+            margin-bottom: 5px !important
+
+        &6tb
+            margin-bottom: 6px !important
+
+        &7tb
+            margin-bottom: 7px !important
+
+        &8tb
+            margin-bottom: 8px !important
+
+        &9tb
+            margin-bottom: 9px !important
+
+        &10tb
+            margin-bottom: 10px !important
+
+        &15tb
+            margin-bottom: 15px !important
+
+        &20tb
+            margin-bottom: 20px !important
+
+        &25tb
+            margin-bottom: 25px !important
+
+        &30tb
+            margin-bottom: 30px !important
+
+        &35tb
+            margin-bottom: 35px !important
+
+        &40tb
+            margin-bottom: 40px !important
+
+        &45tb
+            margin-bottom: 45px !important
+
+        &50tb
+            margin-bottom: 50px !important
+
+        &55tb
+            margin-bottom: 55px !important
+
+        &60tb
+            margin-bottom: 60px !important
+
+        &65tb
+            margin-bottom: 65px !important
+
+        &70tb
+            margin-bottom: 70px !important
+
+        &75tb
+            margin-bottom: 75px !important
+
+        &80tb
+            margin-bottom: 80px !important
+
+        &85tb
+            margin-bottom: 85px !important
+
+        &90tb
+            margin-bottom: 90px !important
+
+        &95tb
+            margin-bottom: 95px !important
+
+        &100tb
+            margin-bottom: 100px !important
+
+        &105sp
+            margin-bottom: 105px !important
+
+        &110sp
+            margin-bottom: 110px !important
+
+        &115sp
+            margin-bottom: 115px !important
+
+        &120sp
+            margin-bottom: 120px !important
+
+    .mr
+
+        &0tb
+            margin-right: 0 !important
+
+        &1tb
+            margin-right: 1px !important
+
+        &2tb
+            margin-right: 2px !important
+
+        &3tb
+            margin-right: 3px !important
+
+        &4tb
+            margin-right: 4px !important
+
+        &5tb
+            margin-right: 5px !important
+
+        &6tb
+            margin-right: 6px !important
+
+        &7tb
+            margin-right: 7px !important
+
+        &8tb
+            margin-right: 8px !important
+
+        &9tb
+            margin-right: 9px !important
+
+        &10tb
+            margin-right: 10px !important
+
+        &15tb
+            margin-right: 15px !important
+
+        &20tb
+            margin-right: 20px !important
+
+        &25tb
+            margin-right: 25px !important
+
+        &30tb
+            margin-right: 30px !important
+
+        &35tb
+            margin-right: 35px !important
+
+        &40tb
+            margin-right: 40px !important
+
+        &45tb
+            margin-right: 45px !important
+
+        &50tb
+            margin-right: 50px !important
+
+        &55tb
+            margin-right: 55px !important
+
+        &60tb
+            margin-right: 60px !important
+
+        &65tb
+            margin-right: 65px !important
+
+        &70tb
+            margin-right: 70px !important
+
+        &75tb
+            margin-right: 75px !important
+
+        &80tb
+            margin-right: 80px !important
+
+        &85tb
+            margin-right: 85px !important
+
+        &90tb
+            margin-right: 90px !important
+
+        &95tb
+            margin-right: 95px !important
+
+        &100tb
+            margin-right: 100px !important
+
+        &105tb
+            margin-right: 105px !important
+
+        &110tb
+            margin-right: 110px !important
+
+        &115tb
+            margin-right: 115px !important
+
+        &120tb
+            margin-right: 120px !important
+
+        &autotb
+            margin-right: auto !important
+
+    .ml
+
+        &0tb
+            margin-left: 0 !important
+
+        &1tb
+            margin-left: 1px !important
+
+        &2tb
+            margin-left: 2px !important
+
+        &3tb
+            margin-left: 3px !important
+
+        &4tb
+            margin-left: 4px !important
+
+        &5tb
+            margin-left: 5px !important
+
+        &6tb
+            margin-left: 6px !important
+
+        &7tb
+            margin-left: 7px !important
+
+        &8tb
+            margin-left: 8px !important
+
+        &9tb
+            margin-left: 9px !important
+
+        &10tb
+            margin-left: 10px !important
+
+        &15tb
+            margin-left: 15px !important
+
+        &20tb
+            margin-left: 20px !important
+
+        &25tb
+            margin-left: 25px !important
+
+        &30tb
+            margin-left: 30px !important
+
+        &35tb
+            margin-left: 35px !important
+
+        &40tb
+            margin-left: 40px !important
+
+        &45tb
+            margin-left: 45px !important
+
+        &50tb
+            margin-left: 50px !important
+
+        &55tb
+            margin-left: 55px !important
+
+        &60tb
+            margin-left: 60px !important
+
+        &65tb
+            margin-left: 65px !important
+
+        &70tb
+            margin-left: 70px !important
+
+        &75tb
+            margin-left: 75px !important
+
+        &80tb
+            margin-left: 80px !important
+
+        &85tb
+            margin-left: 85px !important
+
+        &90tb
+            margin-left: 90px !important
+
+        &95tb
+            margin-left: 95px !important
+
+        &100tb
+            margin-left: 100px !important
+
+        &105tb
+            margin-left: 105px !important
+
+        &110tb
+            margin-left: 110px !important
+
+        &115tb
+            margin-left: 115px !important
+
+        &120tb
+            margin-left: 120px !important
+
+        &autotb
+            margin-left: auto !important
+
+    .mx
+
+        &0tb
+            margin-left: 0 !important
+            margin-right: 0 !important
+
+        &1tb
+            margin-left: 1px !important
+            margin-right: 1px !important
+
+        &2tb
+            margin-left: 2px !important
+            margin-right: 2px !important
+
+        &3tb
+            margin-left: 3px !important
+            margin-right: 3px !important
+
+        &4tb
+            margin-left: 4px !important
+            margin-right: 4px !important
+
+        &5tb
+            margin-left: 5px !important
+            margin-right: 5px !important
+
+        &6tb
+            margin-left: 6px !important
+            margin-right: 6px !important
+
+        &7tb
+            margin-left: 7px !important
+            margin-right: 7px !important
+
+        &8tb
+            margin-left: 8px !important
+            margin-right: 8px !important
+
+        &9tb
+            margin-left: 9px !important
+            margin-right: 9px !important
+
+        &10tb
+            margin-left: 10px !important
+            margin-right: 10px !important
+
+        &15tb
+            margin-left: 15px !important
+            margin-right: 15px !important
+
+        &20tb
+            margin-left: 20px !important
+            margin-right: 20px !important
+
+        &25tb
+            margin-left: 25px !important
+            margin-right: 25px !important
+
+        &30tb
+            margin-left: 30px !important
+            margin-right: 30px !important
+
+        &35tb
+            margin-left: 35px !important
+            margin-right: 35px !important
+
+        &40tb
+            margin-left: 40px !important
+            margin-right: 40px !important
+
+        &45tb
+            margin-left: 45px !important
+            margin-right: 45px !important
+
+        &50tb
+            margin-left: 50px !important
+            margin-right: 50px !important
+
+        &55tb
+            margin-left: 55px !important
+            margin-right: 55px !important
+
+        &60tb
+            margin-left: 60px !important
+            margin-right: 60px !important
+
+        &65tb
+            margin-left: 65px !important
+            margin-right: 65px !important
+
+        &70tb
+            margin-left: 70px !important
+            margin-right: 70px !important
+
+        &75tb
+            margin-left: 75px !important
+            margin-right: 75px !important
+
+        &80tb
+            margin-left: 80px !important
+            margin-right: 80px !important
+
+        &85tb
+            margin-left: 85px !important
+            margin-right: 85px !important
+
+        &90tb
+            margin-left: 90px !important
+            margin-right: 90px !important
+
+        &95tb
+            margin-left: 95px !important
+            margin-right: 95px !important
+
+        &100tb
+            margin-left: 100px !important
+            margin-right: 100px !important
+
+        &105tb
+            margin-left: 105px !important
+            margin-right: 105px !important
+
+        &110tb
+            margin-left: 110px !important
+            margin-right: 110px !important
+
+        &115tb
+            margin-left: 115px !important
+            margin-right: 115px !important
+
+        &120tb
+            margin-left: 120px !important
+            margin-right: 120px !important
+
+        &autotb
+            margin-left: auto !important
+            margin-right: auto !important
+
+    .my
+
+        &0tb
+            margin-top: 0!important
+            margin-bottom: 0 !important
+
+        &1tb
+            margin-top: 1px!important
+            margin-bottom: 1px !important
+
+        &2tb
+            margin-top: 2px!important
+            margin-bottom: 2px !important
+
+        &3tb
+            margin-top: 3px!important
+            margin-bottom: 3px !important
+
+        &4tb
+            margin-top: 4px!important
+            margin-bottom: 4px !important
+
+        &5tb
+            margin-top: 5px!important
+            margin-bottom: 5px !important
+
+        &6tb
+            margin-top: 6px!important
+            margin-bottom: 6px !important
+
+        &7tb
+            margin-top: 7px!important
+            margin-bottom: 7px !important
+
+        &8tb
+            margin-top: 8px!important
+            margin-bottom: 8px !important
+
+        &9tb
+            margin-top: 9px!important
+            margin-bottom: 9px !important
+
+        &10tb
+            margin-top: 10px!important
+            margin-bottom: 10px !important
+
+        &15tb
+            margin-top: 15px!important
+            margin-bottom: 15px !important
+
+        &20tb
+            margin-top: 20px!important
+            margin-bottom: 20px !important
+
+        &25tb
+            margin-top: 25px!important
+            margin-bottom: 25px !important
+
+        &30tb
+            margin-top: 30px!important
+            margin-bottom: 30px !important
+
+        &35tb
+            margin-top: 35px!important
+            margin-bottom: 35px !important
+
+        &40tb
+            margin-top: 40px!important
+            margin-bottom: 40px !important
+
+        &45tb
+            margin-top: 45px!important
+            margin-bottom: 45px !important
+
+        &50tb
+            margin-top: 50px!important
+            margin-bottom: 50px !important
+
+        &55tb
+            margin-top: 55px!important
+            margin-bottom: 55px !important
+
+        &60tb
+            margin-top: 60px!important
+            margin-bottom: 60px !important
+
+        &65tb
+            margin-top: 65px!important
+            margin-bottom: 65px !important
+
+        &70tb
+            margin-top: 70px!important
+            margin-bottom: 70px !important
+
+        &75tb
+            margin-top: 75px!important
+            margin-bottom: 75px !important
+
+        &80tb
+            margin-top: 80px!important
+            margin-bottom: 80px !important
+
+        &85tb
+            margin-top: 85px!important
+            margin-bottom: 85px !important
+
+        &90tb
+            margin-top: 90px!important
+            margin-bottom: 90px !important
+
+        &95tb
+            margin-top: 95px!important
+            margin-bottom: 95px !important
+
+        &100tb
+            margin-top: 100px!important
+            margin-bottom: 100px !important
+
+        &105tb
+            margin-top: 105px!important
+            margin-bottom: 105px !important
+
+        &110tb
+            margin-top: 110px!important
+            margin-bottom: 110px !important
+
+        &115tb
+            margin-top: 115px!important
+            margin-bottom: 115px !important
+
+        &120tb
+            margin-top: 120px!important
+            margin-bottom: 120px !important
+
+    .w
+
+        &1tb,
+        &fulltb
+            width: 100%
+
+    .centertb
+        margin-left: auto !important
+        margin-right: auto !important
+
+    .d
+
+        &-none-tb
+            display: none !important
+
+        &-inline-block-tb
+            display: inline-block !important
+
+        &-block-tb
+            display: block !important
+
+        &-flex-tb
+            display: flex !important
+
+        &-inline-flex-tb
+            display: inline-flex !important
+
+    .flex
+
+        &-row-tb
+            flex-direction: row !important
+
+        &-column-tb
+            flex-direction: column !important
+
+        &-row-reverse-tb
+            flex-direction: row-reverse !important
+
+        &-column-reverse-tb
+            flex-direction: column-reverse !important
+
+        &-wrap-tb
+            flex-wrap: wrap !important
+
+        &-nowrap-tb
+            flex-wrap: nowrap !important
+
+        &-wrap-reverse-tb
+            flex-wrap: wrap-reverse !important
+
+    .justify-content
+
+        &-start-tb
+            justify-content: flex-start !important
+
+        &-end-tb
+            justify-content: flex-end !important
+
+        &-center-tb
+            justify-content: center !important
+
+        &-between-tb
+            justify-content: space-between !important
+
+        &-around-tb
+            justify-content: space-around !important
+
+    .align-items
+
+        &-start-tb
+            align-items: flex-start !important
+
+        &-end-tb
+            align-items: flex-end !important
+
+        &-center-tb
+            align-items: center !important
+
+        &-baseline-tb
+            align-items: baseline !important
+
+        &-stretch-tb
+            align-items: stretch !important
+
+    .align-content
+
+        &-start-tb
+            align-content: flex-start !important
+
+        &-end-tb
+            align-content: flex-end !important
+
+        &-center-tb
+            align-content: center !important
+
+        &-between-tb
+            align-content: space-between !important
+
+        &-around-tb
+            align-content: space-around !important
+
+        &-stretch-tb
+            align-content: stretch !important
+
+    .align-self
+
+        &-auto-tb
+            align-self: auto !important
+
+        &-start-tb
+            align-self: flex-start !important
+
+        &-end-tb
+            align-self: flex-end !important
+
+        &-center-tb
+            align-self: center !important
+
+        &-baseline-tb
+            align-self: baseline !important
+
+        &-stretch-tb
+            align-self: stretch !important
+
+    .f
+
+        &r-tb
+            float: right
+
+        &l-tb
+            float: left
+
+        &n-tb
+            float: none
+
+    .t
+
+        &c-tb
+            text-align: center
+
+        &r-tb
+            text-align: right
+
+        &l-tb
+            text-align: left
+
+@media only screen and (max-width: 768px)
+    .text
+
+        &8sp
+            font-size: 0.8rem!important
+
+        &9sp
+            font-size: 0.9rem!important
+
+        &10sp
+            font-size: 1rem!important
+
+        &11sp
+            font-size: 1.1rem!important
+
+        &12sp
+            font-size: 1.2rem!important
+
+        &13sp
+            font-size: 1.3rem!important
+
+        &14sp
+            font-size: 1.4rem!important
+
+        &15sp
+            font-size: 1.5rem!important
+
+        &16sp
+            font-size: 1.6rem!important
+
+        &18sp
+            font-size: 1.8rem!important
+
+        &20sp
+            font-size: 2rem!important
+
+        &22sp
+            font-size: 2.2rem!important
+
+        &24sp
+            font-size: 2.4rem!important
+
+        &25sp
+            font-size: 2.5rem!important
+
+        &26sp
+            font-size: 2.6rem!important
+
+        &28sp
+            font-size: 2.8rem!important
+
+        &30sp
+            font-size: 3rem!important
+
+        &32sp
+            font-size: 3.2rem!important
+
+        &34sp
+            font-size: 3.4rem!important
+
+        &36sp
+            font-size: 3.6rem!important
+
+        &38sp
+            font-size: 3.8rem!important
+
+        &40sp
+            font-size: 4rem!important
+
+        &42sp
+            font-size: 4.2rem!important
+
+        &43sp
+            font-size: 4.3rem!important
+
+        &44sp
+            font-size: 4.4rem!important
+
+        &45sp
+            font-size: 4.5rem!important
+
+        &46sp
+            font-size: 4.6rem!important
+
+        &48sp
+            font-size: 4.8rem!important
+
+        &50sp
+            font-size: 5rem!important
+
+        &52sp
+            font-size: 5.2rem!important
+
+        &54sp
+            font-size: 5.4rem!important
+
+        &58sp
+            font-size: 5.8rem!important
+
+        &60sp
+            font-size: 6rem!important
+
+        &62sp
+            font-size: 6.2rem!important
+
+        &64sp
+            font-size: 6.4rem!important
+
+        &68sp
+            font-size: 6.8rem!important
+
+        &70sp
+            font-size: 7rem!important
+
+        &72sp
+            font-size: 7.2rem!important
+
+        &74sp
+            font-size: 7.4rem!important
+
+        &80sp
+            font-size: 8rem!important
+
+        &82sp
+            font-size: 8.2rem!important
+
+        &84sp
+            font-size: 8.4rem!important
+
+        &90sp
+            font-size: 9rem!important
+
+        &91sp
+            font-size: 9.1rem!important
+
+        &96sp
+            font-size: 9.6rem!important
+
+    .p
+
+        &0sp
+            padding: 0 !important
+
+        &1sp
+            padding: 1px !important
+
+        &2sp
+            padding: 2px !important
+
+        &3sp
+            padding: 3px !important
+
+        &4sp
+            padding: 4px !important
+
+        &5sp
+            padding: 5px !important
+
+        &6sp
+            padding: 6px !important
+
+        &7sp
+            padding: 7px !important
+
+        &8sp
+            padding: 8px !important
+
+        &9sp
+            padding: 9px !important
+
+        &10sp
+            padding: 10px !important
+
+        &15sp
+            padding: 15px !important
+
+        &20sp
+            padding: 20px !important
+
+        &25sp
+            padding: 25px !important
+
+        &30sp
+            padding: 30px !important
+
+        &35sp
+            padding: 35px !important
+
+        &40sp
+            padding: 40px !important
+
+        &45sp
+            padding: 45px !important
+
+        &50sp
+            padding: 50px !important
+
+        &55sp
+            padding: 55px !important
+
+        &60sp
+            padding: 60px !important
+
+        &65sp
+            padding: 65px !important
+
+        &70sp
+            padding: 70px !important
+
+        &75sp
+            padding: 75px !important
+
+        &80sp
+            padding: 80px !important
+
+        &85sp
+            padding: 85px !important
+
+        &90sp
+            padding: 90px !important
+
+        &95sp
+            padding: 95px !important
+
+        &100sp
+            padding: 100px !important
+
+        &105sp
+            padding: 105px !important
+
+        &110sp
+            padding: 110px !important
+
+        &115sp
+            padding: 115px !important
+
+        &120sp
+            padding: 120px !important
+
+    .pt
+
+        &0sp
+            padding-top: 0 !important
+
+        &1sp
+            padding-top: 1px !important
+
+        &2sp
+            padding-top: 2px !important
+
+        &3sp
+            padding-top: 3px !important
+
+        &4sp
+            padding-top: 4px !important
+
+        &5sp
+            padding-top: 5px !important
+
+        &6sp
+            padding-top: 6px !important
+
+        &7sp
+            padding-top: 7px !important
+
+        &8sp
+            padding-top: 8px !important
+
+        &9sp
+            padding-top: 9px !important
+
+        &10sp
+            padding-top: 10px !important
+
+        &15sp
+            padding-top: 15px !important
+
+        &20sp
+            padding-top: 20px !important
+
+        &25sp
+            padding-top: 25px !important
+
+        &30sp
+            padding-top: 30px !important
+
+        &35sp
+            padding-top: 35px !important
+
+        &40sp
+            padding-top: 40px !important
+
+        &45sp
+            padding-top: 45px !important
+
+        &50sp
+            padding-top: 50px !important
+
+        &55sp
+            padding-top: 55px !important
+
+        &60sp
+            padding-top: 60px !important
+
+        &65sp
+            padding-top: 65px !important
+
+        &70sp
+            padding-top: 70px !important
+
+        &75sp
+            padding-top: 75px !important
+
+        &80sp
+            padding-top: 80px !important
+
+        &85sp
+            padding-top: 85px !important
+
+        &90sp
+            padding-top: 90px !important
+
+        &95sp
+            padding-top: 95px !important
+
+        &100sp
+            padding-top: 100px !important
+
+        &105sp
+            padding-top: 105px !important
+
+        &110sp
+            padding-top: 110px !important
+
+        &115sp
+            padding-top: 115px !important
+
+        &120sp
+            padding-top: 120px !important
+
+    .pb
+
+        &0sp
+            padding-bottom: 0 !important
+
+        &1sp
+            padding-bottom: 1px !important
+
+        &2sp
+            padding-bottom: 2px !important
+
+        &3sp
+            padding-bottom: 3px !important
+
+        &4sp
+            padding-bottom: 4px !important
+
+        &5sp
+            padding-bottom: 5px !important
+
+        &6sp
+            padding-bottom: 6px !important
+
+        &7sp
+            padding-bottom: 7px !important
+
+        &8sp
+            padding-bottom: 8px !important
+
+        &9sp
+            padding-bottom: 9px !important
+
+        &10sp
+            padding-bottom: 10px !important
+
+        &15sp
+            padding-bottom: 15px !important
+
+        &20sp
+            padding-bottom: 20px !important
+
+        &25sp
+            padding-bottom: 25px !important
+
+        &30sp
+            padding-bottom: 30px !important
+
+        &35sp
+            padding-bottom: 35px !important
+
+        &40sp
+            padding-bottom: 40px !important
+
+        &45sp
+            padding-bottom: 45px !important
+
+        &50sp
+            padding-bottom: 50px !important
+
+        &55sp
+            padding-bottom: 55px !important
+
+        &60sp
+            padding-bottom: 60px !important
+
+        &65sp
+            padding-bottom: 65px !important
+
+        &70sp
+            padding-bottom: 70px !important
+
+        &75sp
+            padding-bottom: 75px !important
+
+        &80sp
+            padding-bottom: 80px !important
+
+        &85sp
+            padding-bottom: 85px !important
+
+        &90sp
+            padding-bottom: 90px !important
+
+        &95sp
+            padding-bottom: 95px !important
+
+        &100sp
+            padding-bottom: 100px !important
+
+        &105sp
+            padding-bottom: 105px !important
+
+        &110sp
+            padding-bottom: 110px !important
+
+        &115sp
+            padding-bottom: 115px !important
+
+        &120sp
+            padding-bottom: 120px !important
+
+    .pr
+
+        &0sp
+            padding-right: 0 !important
+
+        &1sp
+            padding-right: 1px !important
+
+        &2sp
+            padding-right: 2px !important
+
+        &3sp
+            padding-right: 3px !important
+
+        &4sp
+            padding-right: 4px !important
+
+        &5sp
+            padding-right: 5px !important
+
+        &6sp
+            padding-right: 6px !important
+
+        &7sp
+            padding-right: 7px !important
+
+        &8sp
+            padding-right: 8px !important
+
+        &9sp
+            padding-right: 9px !important
+
+        &10sp
+            padding-right: 10px !important
+
+        &15sp
+            padding-right: 15px !important
+
+        &20sp
+            padding-right: 20px !important
+
+        &25sp
+            padding-right: 25px !important
+
+        &30sp
+            padding-right: 30px !important
+
+        &35sp
+            padding-right: 35px !important
+
+        &40sp
+            padding-right: 40px !important
+
+        &45sp
+            padding-right: 45px !important
+
+        &50sp
+            padding-right: 50px !important
+
+        &55sp
+            padding-right: 55px !important
+
+        &60sp
+            padding-right: 60px !important
+
+        &65sp
+            padding-right: 65px !important
+
+        &70sp
+            padding-right: 70px !important
+
+        &75sp
+            padding-right: 75px !important
+
+        &80sp
+            padding-right: 80px !important
+
+        &85sp
+            padding-right: 85px !important
+
+        &90sp
+            padding-right: 90px !important
+
+        &95sp
+            padding-right: 95px !important
+
+        &100sp
+            padding-right: 100px !important
+
+        &105sp
+            padding-right: 105px !important
+
+        &110sp
+            padding-right: 110px !important
+
+        &115sp
+            padding-right: 115px !important
+
+        &120sp
+            padding-right: 120px !important
+
+    .pl
+
+        &0sp
+            padding-left: 0 !important
+
+        &1sp
+            padding-left: 1px !important
+
+        &2sp
+            padding-left: 2px !important
+
+        &3sp
+            padding-left: 3px !important
+
+        &4sp
+            padding-left: 4px !important
+
+        &5sp
+            padding-left: 5px !important
+
+        &6sp
+            padding-left: 6px !important
+
+        &7sp
+            padding-left: 7px !important
+
+        &8sp
+            padding-left: 8px !important
+
+        &9sp
+            padding-left: 9px !important
+
+        &10sp
+            padding-left: 10px !important
+
+        &15sp
+            padding-left: 15px !important
+
+        &20sp
+            padding-left: 20px !important
+
+        &25sp
+            padding-left: 25px !important
+
+        &30sp
+            padding-left: 30px !important
+
+        &35sp
+            padding-left: 35px !important
+
+        &40sp
+            padding-left: 40px !important
+
+        &45sp
+            padding-left: 45px !important
+
+        &50sp
+            padding-left: 50px !important
+
+        &55sp
+            padding-left: 55px !important
+
+        &60sp
+            padding-left: 60px !important
+
+        &65sp
+            padding-left: 65px !important
+
+        &70sp
+            padding-left: 70px !important
+
+        &75sp
+            padding-left: 75px !important
+
+        &80sp
+            padding-left: 80px !important
+
+        &85sp
+            padding-left: 85px !important
+
+        &90sp
+            padding-left: 90px !important
+
+        &95sp
+            padding-left: 95px !important
+
+        &100sp
+            padding-left: 100px !important
+
+        &105sp
+            padding-left: 105px !important
+
+        &110sp
+            padding-left: 110px !important
+
+        &115sp
+            padding-left: 115px !important
+
+        &120sp
+            padding-left: 120px !important
+
+    .px
+
+        &0sp
+            padding-left: 0 !important
+            padding-right: 0 !important
+
+        &1sp
+            padding-left: 1px !important
+            padding-right: 1px !important
+
+        &2sp
+            padding-left: 2px !important
+            padding-right: 2px !important
+
+        &3sp
+            padding-left: 3px !important
+            padding-right: 3px !important
+
+        &4sp
+            padding-left: 4px !important
+            padding-right: 4px !important
+
+        &5sp
+            padding-left: 5px !important
+            padding-right: 5px !important
+
+        &6sp
+            padding-left: 6px !important
+            padding-right: 6px !important
+
+        &7sp
+            padding-left: 7px !important
+            padding-right: 7px !important
+
+        &8sp
+            padding-left: 8px !important
+            padding-right: 8px !important
+
+        &9sp
+            padding-left: 9px !important
+            padding-right: 9px !important
+
+        &10sp
+            padding-left: 10px !important
+            padding-right: 10px !important
+
+        &15sp
+            padding-left: 15px !important
+            padding-right: 15px !important
+
+        &20sp
+            padding-left: 20px !important
+            padding-right: 20px !important
+
+        &25sp
+            padding-left: 25px !important
+            padding-right: 25px !important
+
+        &30sp
+            padding-left: 30px !important
+            padding-right: 30px !important
+
+        &35sp
+            padding-left: 35px !important
+            padding-right: 35px !important
+
+        &40sp
+            padding-left: 40px !important
+            padding-right: 40px !important
+
+        &45sp
+            padding-left: 45px !important
+            padding-right: 45px !important
+
+        &50sp
+            padding-left: 50px !important
+            padding-right: 50px !important
+
+        &55sp
+            padding-left: 55px !important
+            padding-right: 55px !important
+
+        &60sp
+            padding-left: 60px !important
+            padding-right: 60px !important
+
+        &65sp
+            padding-left: 65px !important
+            padding-right: 65px !important
+
+        &70sp
+            padding-left: 70px !important
+            padding-right: 70px !important
+
+        &75sp
+            padding-left: 75px !important
+            padding-right: 75px !important
+
+        &80sp
+            padding-left: 80px !important
+            padding-right: 80px !important
+
+        &85sp
+            padding-left: 85px !important
+            padding-right: 85px !important
+
+        &90sp
+            padding-left: 90px !important
+            padding-right: 90px !important
+
+        &95sp
+            padding-left: 95px !important
+            padding-right: 95px !important
+
+        &100sp
+            padding-left: 100px !important
+            padding-right: 100px !important
+
+        &105sp
+            padding-left: 105px !important
+            padding-right: 105px !important
+
+        &110sp
+            padding-left: 110px !important
+            padding-right: 110px !important
+
+        &115sp
+            padding-left: 115px !important
+            padding-right: 115px !important
+
+        &120sp
+            padding-left: 120px !important
+            padding-right: 120px !important
+
+    .py
+
+        &0sp
+            padding-top: 0!important
+            padding-bottom: 0 !important
+
+        &1sp
+            padding-top: 1px!important
+            padding-bottom: 1px !important
+
+        &2sp
+            padding-top: 2px!important
+            padding-bottom: 2px !important
+
+        &3sp
+            padding-top: 3px!important
+            padding-bottom: 3px !important
+
+        &4sp
+            padding-top: 4px!important
+            padding-bottom: 4px !important
+
+        &5sp
+            padding-top: 5px!important
+            padding-bottom: 5px !important
+
+        &6sp
+            padding-top: 6px!important
+            padding-bottom: 6px !important
+
+        &7sp
+            padding-top: 7px!important
+            padding-bottom: 7px !important
+
+        &8sp
+            padding-top: 8px!important
+            padding-bottom: 8px !important
+
+        &9sp
+            padding-top: 9px!important
+            padding-bottom: 9px !important
+
+        &10sp
+            padding-top: 10px!important
+            padding-bottom: 10px !important
+
+        &15sp
+            padding-top: 15px!important
+            padding-bottom: 15px !important
+
+        &20sp
+            padding-top: 20px!important
+            padding-bottom: 20px !important
+
+        &25sp
+            padding-top: 25px!important
+            padding-bottom: 25px !important
+
+        &30sp
+            padding-top: 30px!important
+            padding-bottom: 30px !important
+
+        &35sp
+            padding-top: 35px!important
+            padding-bottom: 35px !important
+
+        &40sp
+            padding-top: 40px!important
+            padding-bottom: 40px !important
+
+        &45sp
+            padding-top: 45px!important
+            padding-bottom: 45px !important
+
+        &50sp
+            padding-top: 50px!important
+            padding-bottom: 50px !important
+
+        &55sp
+            padding-top: 55px!important
+            padding-bottom: 55px !important
+
+        &60sp
+            padding-top: 60px!important
+            padding-bottom: 60px !important
+
+        &65sp
+            padding-top: 65px!important
+            padding-bottom: 65px !important
+
+        &70sp
+            padding-top: 70px!important
+            padding-bottom: 70px !important
+
+        &75sp
+            padding-top: 75px!important
+            padding-bottom: 75px !important
+
+        &80sp
+            padding-top: 80px!important
+            padding-bottom: 80px !important
+
+        &85sp
+            padding-top: 85px!important
+            padding-bottom: 85px !important
+
+        &90sp
+            padding-top: 90px!important
+            padding-bottom: 90px !important
+
+        &95sp
+            padding-top: 95px!important
+            padding-bottom: 95px !important
+
+        &100sp
+            padding-top: 100px!important
+            padding-bottom: 100px !important
+
+        &105sp
+            padding-top: 105px!important
+            padding-bottom: 105px !important
+
+        &110sp
+            padding-top: 110px!important
+            padding-bottom: 110px !important
+
+        &115sp
+            padding-top: 115px!important
+            padding-bottom: 115px !important
+
+        &120sp
+            padding-top: 120px!important
+            padding-bottom: 120px !important
+
+    .m
+
+        &0sp
+            margin: 0 !important
+
+        &1sp
+            margin: 1px !important
+
+        &2sp
+            margin: 2px !important
+
+        &3sp
+            margin: 3px !important
+
+        &4sp
+            margin: 4px !important
+
+        &5sp
+            margin: 5px !important
+
+        &6sp
+            margin: 6px !important
+
+        &7sp
+            margin: 7px !important
+
+        &8sp
+            margin: 8px !important
+
+        &9sp
+            margin: 9px !important
+
+        &10sp
+            margin: 10px !important
+
+        &15sp
+            margin: 15px !important
+
+        &20sp
+            margin: 20px !important
+
+        &25sp
+            margin: 25px !important
+
+        &30sp
+            margin: 30px !important
+
+        &35sp
+            margin: 35px !important
+
+        &40sp
+            margin: 40px !important
+
+        &45sp
+            margin: 45px !important
+
+        &50sp
+            margin: 50px !important
+
+        &55sp
+            margin: 55px !important
+
+        &60sp
+            margin: 60px !important
+
+        &65sp
+            margin: 65px !important
+
+        &70sp
+            margin: 70px !important
+
+        &75sp
+            margin: 75px !important
+
+        &80sp
+            margin: 80px !important
+
+        &85sp
+            margin: 85px !important
+
+        &90sp
+            margin: 90px !important
+
+        &95sp
+            margin: 95px !important
+
+        &100sp
+            margin: 100px !important
+
+        &105sp
+            margin: 105px !important
+
+        &110sp
+            margin: 110px !important
+
+        &115sp
+            margin: 115px !important
+
+        &120sp
+            margin: 120px !important
+
+    .mt
+
+        &0sp
+            margin-top: 0 !important
+
+        &1sp
+            margin-top: 1px !important
+
+        &2sp
+            margin-top: 2px !important
+
+        &3sp
+            margin-top: 3px !important
+
+        &4sp
+            margin-top: 4px !important
+
+        &5sp
+            margin-top: 5px !important
+
+        &6sp
+            margin-top: 6px !important
+
+        &7sp
+            margin-top: 7px !important
+
+        &8sp
+            margin-top: 8px !important
+
+        &9sp
+            margin-top: 9px !important
+
+        &10sp
+            margin-top: 10px !important
+
+        &15sp
+            margin-top: 15px !important
+
+        &20sp
+            margin-top: 20px !important
+
+        &25sp
+            margin-top: 25px !important
+
+        &30sp
+            margin-top: 30px !important
+
+        &35sp
+            margin-top: 35px !important
+
+        &40sp
+            margin-top: 40px !important
+
+        &45sp
+            margin-top: 45px !important
+
+        &50sp
+            margin-top: 50px !important
+
+        &55sp
+            margin-top: 55px !important
+
+        &60sp
+            margin-top: 60px !important
+
+        &65sp
+            margin-top: 65px !important
+
+        &70sp
+            margin-top: 70px !important
+
+        &75sp
+            margin-top: 75px !important
+
+        &80sp
+            margin-top: 80px !important
+
+        &85sp
+            margin-top: 85px !important
+
+        &90sp
+            margin-top: 90px !important
+
+        &95sp
+            margin-top: 95px !important
+
+        &100sp
+            margin-top: 100px !important
+
+        &105sp
+            margin-top: 105px !important
+
+        &110sp
+            margin-top: 110px !important
+
+        &115sp
+            margin-top: 115px !important
+
+        &120sp
+            margin-top: 120px !important
+
+    .mb
+
+        &0sp
+            margin-bottom: 0 !important
+
+        &1sp
+            margin-bottom: 1px !important
+
+        &2sp
+            margin-bottom: 2px !important
+
+        &3sp
+            margin-bottom: 3px !important
+
+        &4sp
+            margin-bottom: 4px !important
+
+        &5sp
+            margin-bottom: 5px !important
+
+        &6sp
+            margin-bottom: 6px !important
+
+        &7sp
+            margin-bottom: 7px !important
+
+        &8sp
+            margin-bottom: 8px !important
+
+        &9sp
+            margin-bottom: 9px !important
+
+        &10sp
+            margin-bottom: 10px !important
+
+        &15sp
+            margin-bottom: 15px !important
+
+        &20sp
+            margin-bottom: 20px !important
+
+        &25sp
+            margin-bottom: 25px !important
+
+        &30sp
+            margin-bottom: 30px !important
+
+        &35sp
+            margin-bottom: 35px !important
+
+        &40sp
+            margin-bottom: 40px !important
+
+        &45sp
+            margin-bottom: 45px !important
+
+        &50sp
+            margin-bottom: 50px !important
+
+        &55sp
+            margin-bottom: 55px !important
+
+        &60sp
+            margin-bottom: 60px !important
+
+        &65sp
+            margin-bottom: 65px !important
+
+        &70sp
+            margin-bottom: 70px !important
+
+        &75sp
+            margin-bottom: 75px !important
+
+        &80sp
+            margin-bottom: 80px !important
+
+        &85sp
+            margin-bottom: 85px !important
+
+        &90sp
+            margin-bottom: 90px !important
+
+        &95sp
+            margin-bottom: 95px !important
+
+        &100sp
+            margin-bottom: 100px !important
+
+        &105sp
+            margin-bottom: 105px !important
+
+        &110sp
+            margin-bottom: 110px !important
+
+        &115sp
+            margin-bottom: 115px !important
+
+        &120sp
+            margin-bottom: 120px !important
+
+    .mr
+
+        &0sp
+            margin-right: 0 !important
+
+        &1sp
+            margin-right: 1px !important
+
+        &2sp
+            margin-right: 2px !important
+
+        &3sp
+            margin-right: 3px !important
+
+        &4sp
+            margin-right: 4px !important
+
+        &5sp
+            margin-right: 5px !important
+
+        &6sp
+            margin-right: 6px !important
+
+        &7sp
+            margin-right: 7px !important
+
+        &8sp
+            margin-right: 8px !important
+
+        &9sp
+            margin-right: 9px !important
+
+        &10sp
+            margin-right: 10px !important
+
+        &15sp
+            margin-right: 15px !important
+
+        &20sp
+            margin-right: 20px !important
+
+        &25sp
+            margin-right: 25px !important
+
+        &30sp
+            margin-right: 30px !important
+
+        &35sp
+            margin-right: 35px !important
+
+        &40sp
+            margin-right: 40px !important
+
+        &45sp
+            margin-right: 45px !important
+
+        &50sp
+            margin-right: 50px !important
+
+        &55sp
+            margin-right: 55px !important
+
+        &60sp
+            margin-right: 60px !important
+
+        &65sp
+            margin-right: 65px !important
+
+        &70sp
+            margin-right: 70px !important
+
+        &75sp
+            margin-right: 75px !important
+
+        &80sp
+            margin-right: 80px !important
+
+        &85sp
+            margin-right: 85px !important
+
+        &90sp
+            margin-right: 90px !important
+
+        &95sp
+            margin-right: 95px !important
+
+        &100sp
+            margin-right: 100px !important
+
+        &105sp
+            margin-right: 105px !important
+
+        &110sp
+            margin-right: 110px !important
+
+        &115sp
+            margin-right: 115px !important
+
+        &120sp
+            margin-right: 120px !important
+
+        &autosp
+            margin-right: auto !important
+
+    .ml
+
+        &0sp
+            margin-left: 0 !important
+
+        &1sp
+            margin-left: 1px !important
+
+        &2sp
+            margin-left: 2px !important
+
+        &3sp
+            margin-left: 3px !important
+
+        &4sp
+            margin-left: 4px !important
+
+        &5sp
+            margin-left: 5px !important
+
+        &6sp
+            margin-left: 6px !important
+
+        &7sp
+            margin-left: 7px !important
+
+        &8sp
+            margin-left: 8px !important
+
+        &9sp
+            margin-left: 9px !important
+
+        &10sp
+            margin-left: 10px !important
+
+        &15sp
+            margin-left: 15px !important
+
+        &20sp
+            margin-left: 20px !important
+
+        &25sp
+            margin-left: 25px !important
+
+        &30sp
+            margin-left: 30px !important
+
+        &35sp
+            margin-left: 35px !important
+
+        &40sp
+            margin-left: 40px !important
+
+        &45sp
+            margin-left: 45px !important
+
+        &50sp
+            margin-left: 50px !important
+
+        &55sp
+            margin-left: 55px !important
+
+        &60sp
+            margin-left: 60px !important
+
+        &65sp
+            margin-left: 65px !important
+
+        &70sp
+            margin-left: 70px !important
+
+        &75sp
+            margin-left: 75px !important
+
+        &80sp
+            margin-left: 80px !important
+
+        &85sp
+            margin-left: 85px !important
+
+        &90sp
+            margin-left: 90px !important
+
+        &95sp
+            margin-left: 95px !important
+
+        &100sp
+            margin-left: 100px !important
+
+        &105sp
+            margin-left: 105px !important
+
+        &110sp
+            margin-left: 110px !important
+
+        &115sp
+            margin-left: 115px !important
+
+        &120sp
+            margin-left: 120px !important
+
+        &autosp
+            margin-left: auto !important
+
+    .mx
+
+        &0sp
+            margin-left: 0 !important
+            margin-right: 0 !important
+
+        &1sp
+            margin-left: 1px !important
+            margin-right: 1px !important
+
+        &2sp
+            margin-left: 2px !important
+            margin-right: 2px !important
+
+        &3sp
+            margin-left: 3px !important
+            margin-right: 3px !important
+
+        &4sp
+            margin-left: 4px !important
+            margin-right: 4px !important
+
+        &5sp
+            margin-left: 5px !important
+            margin-right: 5px !important
+
+        &6sp
+            margin-left: 6px !important
+            margin-right: 6px !important
+
+        &7sp
+            margin-left: 7px !important
+            margin-right: 7px !important
+
+        &8sp
+            margin-left: 8px !important
+            margin-right: 8px !important
+
+        &9sp
+            margin-left: 9px !important
+            margin-right: 9px !important
+
+        &10sp
+            margin-left: 10px !important
+            margin-right: 10px !important
+
+        &15sp
+            margin-left: 15px !important
+            margin-right: 15px !important
+
+        &20sp
+            margin-left: 20px !important
+            margin-right: 20px !important
+
+        &25sp
+            margin-left: 25px !important
+            margin-right: 25px !important
+
+        &30sp
+            margin-left: 30px !important
+            margin-right: 30px !important
+
+        &35sp
+            margin-left: 35px !important
+            margin-right: 35px !important
+
+        &40sp
+            margin-left: 40px !important
+            margin-right: 40px !important
+
+        &45sp
+            margin-left: 45px !important
+            margin-right: 45px !important
+
+        &50sp
+            margin-left: 50px !important
+            margin-right: 50px !important
+
+        &55sp
+            margin-left: 55px !important
+            margin-right: 55px !important
+
+        &60sp
+            margin-left: 60px !important
+            margin-right: 60px !important
+
+        &65sp
+            margin-left: 65px !important
+            margin-right: 65px !important
+
+        &70sp
+            margin-left: 70px !important
+            margin-right: 70px !important
+
+        &75sp
+            margin-left: 75px !important
+            margin-right: 75px !important
+
+        &80sp
+            margin-left: 80px !important
+            margin-right: 80px !important
+
+        &85sp
+            margin-left: 85px !important
+            margin-right: 85px !important
+
+        &90sp
+            margin-left: 90px !important
+            margin-right: 90px !important
+
+        &95sp
+            margin-left: 95px !important
+            margin-right: 95px !important
+
+        &100sp
+            margin-left: 100px !important
+            margin-right: 100px !important
+
+        &105sp
+            margin-left: 105px !important
+            margin-right: 105px !important
+
+        &110sp
+            margin-left: 110px !important
+            margin-right: 110px !important
+
+        &115sp
+            margin-left: 115px !important
+            margin-right: 115px !important
+
+        &120sp
+            margin-left: 120px !important
+            margin-right: 120px !important
+
+        &autosp
+            margin-left: auto !important
+            margin-right: auto !important
+
+    .my
+
+        &0sp
+            margin-top: 0!important
+            margin-bottom: 0 !important
+
+        &1sp
+            margin-top: 1px!important
+            margin-bottom: 1px !important
+
+        &2sp
+            margin-top: 2px!important
+            margin-bottom: 2px !important
+
+        &3sp
+            margin-top: 3px!important
+            margin-bottom: 3px !important
+
+        &4sp
+            margin-top: 4px!important
+            margin-bottom: 4px !important
+
+        &5sp
+            margin-top: 5px!important
+            margin-bottom: 5px !important
+
+        &6sp
+            margin-top: 6px!important
+            margin-bottom: 6px !important
+
+        &7sp
+            margin-top: 7px!important
+            margin-bottom: 7px !important
+
+        &8sp
+            margin-top: 8px!important
+            margin-bottom: 8px !important
+
+        &9sp
+            margin-top: 9px!important
+            margin-bottom: 9px !important
+
+        &10sp
+            margin-top: 10px!important
+            margin-bottom: 10px !important
+
+        &15sp
+            margin-top: 15px!important
+            margin-bottom: 15px !important
+
+        &20sp
+            margin-top: 20px!important
+            margin-bottom: 20px !important
+
+        &25sp
+            margin-top: 25px!important
+            margin-bottom: 25px !important
+
+        &30sp
+            margin-top: 30px!important
+            margin-bottom: 30px !important
+
+        &35sp
+            margin-top: 35px!important
+            margin-bottom: 35px !important
+
+        &40sp
+            margin-top: 40px!important
+            margin-bottom: 40px !important
+
+        &45sp
+            margin-top: 45px!important
+            margin-bottom: 45px !important
+
+        &50sp
+            margin-top: 50px!important
+            margin-bottom: 50px !important
+
+        &55sp
+            margin-top: 55px!important
+            margin-bottom: 55px !important
+
+        &60sp
+            margin-top: 60px!important
+            margin-bottom: 60px !important
+
+        &65sp
+            margin-top: 65px!important
+            margin-bottom: 65px !important
+
+        &70sp
+            margin-top: 70px!important
+            margin-bottom: 70px !important
+
+        &75sp
+            margin-top: 75px!important
+            margin-bottom: 75px !important
+
+        &80sp
+            margin-top: 80px!important
+            margin-bottom: 80px !important
+
+        &85sp
+            margin-top: 85px!important
+            margin-bottom: 85px !important
+
+        &90sp
+            margin-top: 90px!important
+            margin-bottom: 90px !important
+
+        &95sp
+            margin-top: 95px!important
+            margin-bottom: 95px !important
+
+        &100sp
+            margin-top: 100px!important
+            margin-bottom: 100px !important
+
+        &105sp
+            margin-top: 105px!important
+            margin-bottom: 105px !important
+
+        &110sp
+            margin-top: 110px!important
+            margin-bottom: 110px !important
+
+        &115sp
+            margin-top: 115px!important
+            margin-bottom: 115px !important
+
+        &120sp
+            margin-top: 120px!important
+            margin-bottom: 120px !important
+
+    .w
+
+        &1sp,
+        &fullsp
+            width: 100%
+
+    .centersp
+        margin-left: auto !important
+        margin-right: auto !important
+
+    .d
+
+        &-none-sp
+            display: none !important
+
+        &-inline-block-sp
+            display: inline-block !important
+
+        &-block-sp
+            display: block !important
+
+        &-flex-sp
+            display: flex !important
+
+        &-inline-flex-sp
+            display: inline-flex !important
+
+    .flex
+
+        &-row-sp
+            flex-direction: row !important
+
+        &-column-sp
+            flex-direction: column !important
+
+        &-row-reverse-sp
+            flex-direction: row-reverse !important
+
+        &-column-reverse-sp
+            flex-direction: column-reverse !important
+
+        &-wrap-sp
+            flex-wrap: wrap !important
+
+        &-nowrap-sp
+            flex-wrap: nowrap !important
+
+        &-wrap-reverse-sp
+            flex-wrap: wrap-reverse !important
+
+    .justify-content
+
+        &-start-sp
+            justify-content: flex-start !important
+
+        &-end-sp
+            justify-content: flex-end !important
+
+        &-center-sp
+            justify-content: center !important
+
+        &-between-sp
+            justify-content: space-between !important
+
+        &-around-sp
+            justify-content: space-around !important
+
+    .align-items
+
+        &-start-sp
+            align-items: flex-start !important
+
+        &-end-sp
+            align-items: flex-end !important
+
+        &-center-sp
+            align-items: center !important
+
+        &-baseline-sp
+            align-items: baseline !important
+
+        &-stretch-sp
+            align-items: stretch !important
+
+    .align-content
+
+        &-start-sp
+            align-content: flex-start !important
+
+        &-end-sp
+            align-content: flex-end !important
+
+        &-center-sp
+            align-content: center !important
+
+        &-between-sp
+            align-content: space-between !important
+
+        &-around-sp
+            align-content: space-around !important
+
+        &-stretch-sp
+            align-content: stretch !important
+
+    .align-self
+
+        &-auto-sp
+            align-self: auto !important
+
+        &-start-sp
+            align-self: flex-start !important
+
+        &-end-sp
+            align-self: flex-end !important
+
+        &-center-sp
+            align-self: center !important
+
+        &-baseline-sp
+            align-self: baseline !important
+
+        &-stretch-sp
+            align-self: stretch !important
+
+    .f
+
+        &r-sp
+            float: right
+
+        &l-sp
+            float: left
+
+        &n-sp
+            float: none
+
+    .t
+
+        &c-sp
+            text-align: center
+
+        &r-sp
+            text-align: right
+
+        &l-sp
+            text-align: left
+
+@media only screen and (max-width: 580px)
+    .text
+
+        &8xs
+            font-size: 0.8rem!important
+
+        &9xs
+            font-size: 0.9rem!important
+
+        &10xs
+            font-size: 1rem!important
+
+        &11xs
+            font-size: 1.1rem!important
+
+        &12xs
+            font-size: 1.2rem!important
+
+        &13xs
+            font-size: 1.3rem!important
+
+        &14xs
+            font-size: 1.4rem!important
+
+        &15xs
+            font-size: 1.5rem!important
+
+        &16xs
+            font-size: 1.6rem!important
+
+        &18xs
+            font-size: 1.8rem!important
+
+        &20xs
+            font-size: 2rem!important
+
+        &22xs
+            font-size: 2.2rem!important
+
+        &24xs
+            font-size: 2.4rem!important
+
+        &25xs
+            font-size: 2.5rem!important
+
+        &26xs
+            font-size: 2.6rem!important
+
+        &28xs
+            font-size: 2.8rem!important
+
+        &30xs
+            font-size: 3rem!important
+
+        &32xs
+            font-size: 3.2rem!important
+
+        &34xs
+            font-size: 3.4rem!important
+
+        &36xs
+            font-size: 3.6rem!important
+
+        &38xs
+            font-size: 3.8rem!important
+
+        &40xs
+            font-size: 4rem!important
+
+        &42xs
+            font-size: 4.2rem!important
+
+        &43xs
+            font-size: 4.3rem!important
+
+        &44xs
+            font-size: 4.4rem!important
+
+        &45xs
+            font-size: 4.5rem!important
+
+        &46xs
+            font-size: 4.6rem!important
+
+        &48xs
+            font-size: 4.8rem!important
+
+        &50xs
+            font-size: 5rem!important
+
+        &52xs
+            font-size: 5.2rem!important
+
+        &54xs
+            font-size: 5.4rem!important
+
+        &58xs
+            font-size: 5.8rem!important
+
+        &60xs
+            font-size: 6rem!important
+
+        &62xs
+            font-size: 6.2rem!important
+
+        &64xs
+            font-size: 6.4rem!important
+
+        &68xs
+            font-size: 6.8rem!important
+
+        &70xs
+            font-size: 7rem!important
+
+        &72xs
+            font-size: 7.2rem!important
+
+        &74xs
+            font-size: 7.4rem!important
+
+        &80xs
+            font-size: 8rem!important
+
+        &82xs
+            font-size: 8.2rem!important
+
+        &84xs
+            font-size: 8.4rem!important
+
+        &90xs
+            font-size: 9rem!important
+
+        &91xs
+            font-size: 9.1rem!important
+
+        &96xs
+            font-size: 9.6rem!important
+
+    .p
+
+        &0xs
+            padding: 0 !important
+
+        &1xs
+            padding: 1px !important
+
+        &2xs
+            padding: 2px !important
+
+        &3xs
+            padding: 3px !important
+
+        &4xs
+            padding: 4px !important
+
+        &5xs
+            padding: 5px !important
+
+        &6xs
+            padding: 6px !important
+
+        &7xs
+            padding: 7px !important
+
+        &8xs
+            padding: 8px !important
+
+        &9xs
+            padding: 9px !important
+
+        &10xs
+            padding: 10px !important
+
+        &15xs
+            padding: 15px !important
+
+        &20xs
+            padding: 20px !important
+
+        &25xs
+            padding: 25px !important
+
+        &30xs
+            padding: 30px !important
+
+        &35xs
+            padding: 35px !important
+
+        &40xs
+            padding: 40px !important
+
+        &45xs
+            padding: 45px !important
+
+        &50xs
+            padding: 50px !important
+
+        &55xs
+            padding: 55px !important
+
+        &60xs
+            padding: 60px !important
+
+        &65xs
+            padding: 65px !important
+
+        &70xs
+            padding: 70px !important
+
+        &75xs
+            padding: 75px !important
+
+        &80xs
+            padding: 80px !important
+
+        &85xs
+            padding: 85px !important
+
+        &90xs
+            padding: 90px !important
+
+        &95xs
+            padding: 95px !important
+
+        &100xs
+            padding: 100px !important
+
+        &105xs
+            padding: 105px !important
+
+        &110xs
+            padding: 110px !important
+
+        &115xs
+            padding: 115px !important
+
+        &120xs
+            padding: 120px !important
+
+    .pt
+
+        &0xs
+            padding-top: 0 !important
+
+        &1xs
+            padding-top: 1px !important
+
+        &2xs
+            padding-top: 2px !important
+
+        &3xs
+            padding-top: 3px !important
+
+        &4xs
+            padding-top: 4px !important
+
+        &5xs
+            padding-top: 5px !important
+
+        &6xs
+            padding-top: 6px !important
+
+        &7xs
+            padding-top: 7px !important
+
+        &8xs
+            padding-top: 8px !important
+
+        &9xs
+            padding-top: 9px !important
+
+        &10xs
+            padding-top: 10px !important
+
+        &15xs
+            padding-top: 15px !important
+
+        &20xs
+            padding-top: 20px !important
+
+        &25xs
+            padding-top: 25px !important
+
+        &30xs
+            padding-top: 30px !important
+
+        &35xs
+            padding-top: 35px !important
+
+        &40xs
+            padding-top: 40px !important
+
+        &45xs
+            padding-top: 45px !important
+
+        &50xs
+            padding-top: 50px !important
+
+        &55xs
+            padding-top: 55px !important
+
+        &60xs
+            padding-top: 60px !important
+
+        &65xs
+            padding-top: 65px !important
+
+        &70xs
+            padding-top: 70px !important
+
+        &75xs
+            padding-top: 75px !important
+
+        &80xs
+            padding-top: 80px !important
+
+        &85xs
+            padding-top: 85px !important
+
+        &90xs
+            padding-top: 90px !important
+
+        &95xs
+            padding-top: 95px !important
+
+        &100xs
+            padding-top: 100px !important
+
+        &105xs
+            padding-top: 105px !important
+
+        &110xs
+            padding-top: 110px !important
+
+        &115xs
+            padding-top: 115px !important
+
+        &120xs
+            padding-top: 120px !important
+
+    .pb
+
+        &0xs
+            padding-bottom: 0 !important
+
+        &1xs
+            padding-bottom: 1px !important
+
+        &2xs
+            padding-bottom: 2px !important
+
+        &3xs
+            padding-bottom: 3px !important
+
+        &4xs
+            padding-bottom: 4px !important
+
+        &5xs
+            padding-bottom: 5px !important
+
+        &6xs
+            padding-bottom: 6px !important
+
+        &7xs
+            padding-bottom: 7px !important
+
+        &8xs
+            padding-bottom: 8px !important
+
+        &9xs
+            padding-bottom: 9px !important
+
+        &10xs
+            padding-bottom: 10px !important
+
+        &15xs
+            padding-bottom: 15px !important
+
+        &20xs
+            padding-bottom: 20px !important
+
+        &25xs
+            padding-bottom: 25px !important
+
+        &30xs
+            padding-bottom: 30px !important
+
+        &35xs
+            padding-bottom: 35px !important
+
+        &40xs
+            padding-bottom: 40px !important
+
+        &45xs
+            padding-bottom: 45px !important
+
+        &50xs
+            padding-bottom: 50px !important
+
+        &55xs
+            padding-bottom: 55px !important
+
+        &60xs
+            padding-bottom: 60px !important
+
+        &65xs
+            padding-bottom: 65px !important
+
+        &70xs
+            padding-bottom: 70px !important
+
+        &75xs
+            padding-bottom: 75px !important
+
+        &80xs
+            padding-bottom: 80px !important
+
+        &85xs
+            padding-bottom: 85px !important
+
+        &90xs
+            padding-bottom: 90px !important
+
+        &95xs
+            padding-bottom: 95px !important
+
+        &100xs
+            padding-bottom: 100px !important
+
+        &105xs
+            padding-bottom: 105px !important
+
+        &110xs
+            padding-bottom: 110px !important
+
+        &115xs
+            padding-bottom: 115px !important
+
+        &120xs
+            padding-bottom: 120px !important
+
+    .pr
+
+        &0xs
+            padding-right: 0 !important
+
+        &1xs
+            padding-right: 1px !important
+
+        &2xs
+            padding-right: 2px !important
+
+        &3xs
+            padding-right: 3px !important
+
+        &4xs
+            padding-right: 4px !important
+
+        &5xs
+            padding-right: 5px !important
+
+        &6xs
+            padding-right: 6px !important
+
+        &7xs
+            padding-right: 7px !important
+
+        &8xs
+            padding-right: 8px !important
+
+        &9xs
+            padding-right: 9px !important
+
+        &10xs
+            padding-right: 10px !important
+
+        &15xs
+            padding-right: 15px !important
+
+        &20xs
+            padding-right: 20px !important
+
+        &25xs
+            padding-right: 25px !important
+
+        &30xs
+            padding-right: 30px !important
+
+        &35xs
+            padding-right: 35px !important
+
+        &40xs
+            padding-right: 40px !important
+
+        &45xs
+            padding-right: 45px !important
+
+        &50xs
+            padding-right: 50px !important
+
+        &55xs
+            padding-right: 55px !important
+
+        &60xs
+            padding-right: 60px !important
+
+        &65xs
+            padding-right: 65px !important
+
+        &70xs
+            padding-right: 70px !important
+
+        &75xs
+            padding-right: 75px !important
+
+        &80xs
+            padding-right: 80px !important
+
+        &85xs
+            padding-right: 85px !important
+
+        &90xs
+            padding-right: 90px !important
+
+        &95xs
+            padding-right: 95px !important
+
+        &100xs
+            padding-right: 100px !important
+
+        &105xs
+            padding-right: 105px !important
+
+        &110xs
+            padding-right: 110px !important
+
+        &115xs
+            padding-right: 115px !important
+
+        &120xs
+            padding-right: 120px !important
+
+    .pl
+
+        &0xs
+            padding-left: 0 !important
+
+        &1xs
+            padding-left: 1px !important
+
+        &2xs
+            padding-left: 2px !important
+
+        &3xs
+            padding-left: 3px !important
+
+        &4xs
+            padding-left: 4px !important
+
+        &5xs
+            padding-left: 5px !important
+
+        &6xs
+            padding-left: 6px !important
+
+        &7xs
+            padding-left: 7px !important
+
+        &8xs
+            padding-left: 8px !important
+
+        &9xs
+            padding-left: 9px !important
+
+        &10xs
+            padding-left: 10px !important
+
+        &15xs
+            padding-left: 15px !important
+
+        &20xs
+            padding-left: 20px !important
+
+        &25xs
+            padding-left: 25px !important
+
+        &30xs
+            padding-left: 30px !important
+
+        &35xs
+            padding-left: 35px !important
+
+        &40xs
+            padding-left: 40px !important
+
+        &45xs
+            padding-left: 45px !important
+
+        &50xs
+            padding-left: 50px !important
+
+        &55xs
+            padding-left: 55px !important
+
+        &60xs
+            padding-left: 60px !important
+
+        &65xs
+            padding-left: 65px !important
+
+        &70xs
+            padding-left: 70px !important
+
+        &75xs
+            padding-left: 75px !important
+
+        &80xs
+            padding-left: 80px !important
+
+        &85xs
+            padding-left: 85px !important
+
+        &90xs
+            padding-left: 90px !important
+
+        &95xs
+            padding-left: 95px !important
+
+        &100xs
+            padding-left: 100px !important
+
+        &105xs
+            padding-left: 105px !important
+
+        &110xs
+            padding-left: 110px !important
+
+        &115xs
+            padding-left: 115px !important
+
+        &120xs
+            padding-left: 120px !important
+
+    .px
+
+        &0xs
+            padding-left: 0 !important
+            padding-right: 0 !important
+
+        &1xs
+            padding-left: 1px !important
+            padding-right: 1px !important
+
+        &2xs
+            padding-left: 2px !important
+            padding-right: 2px !important
+
+        &3xs
+            padding-left: 3px !important
+            padding-right: 3px !important
+
+        &4xs
+            padding-left: 4px !important
+            padding-right: 4px !important
+
+        &5xs
+            padding-left: 5px !important
+            padding-right: 5px !important
+
+        &6xs
+            padding-left: 6px !important
+            padding-right: 6px !important
+
+        &7xs
+            padding-left: 7px !important
+            padding-right: 7px !important
+
+        &8xs
+            padding-left: 8px !important
+            padding-right: 8px !important
+
+        &9xs
+            padding-left: 9px !important
+            padding-right: 9px !important
+
+        &10xs
+            padding-left: 10px !important
+            padding-right: 10px !important
+
+        &15xs
+            padding-left: 15px !important
+            padding-right: 15px !important
+
+        &20xs
+            padding-left: 20px !important
+            padding-right: 20px !important
+
+        &25xs
+            padding-left: 25px !important
+            padding-right: 25px !important
+
+        &30xs
+            padding-left: 30px !important
+            padding-right: 30px !important
+
+        &35xs
+            padding-left: 35px !important
+            padding-right: 35px !important
+
+        &40xs
+            padding-left: 40px !important
+            padding-right: 40px !important
+
+        &45xs
+            padding-left: 45px !important
+            padding-right: 45px !important
+
+        &50xs
+            padding-left: 50px !important
+            padding-right: 50px !important
+
+        &55xs
+            padding-left: 55px !important
+            padding-right: 55px !important
+
+        &60xs
+            padding-left: 60px !important
+            padding-right: 60px !important
+
+        &65xs
+            padding-left: 65px !important
+            padding-right: 65px !important
+
+        &70xs
+            padding-left: 70px !important
+            padding-right: 70px !important
+
+        &75xs
+            padding-left: 75px !important
+            padding-right: 75px !important
+
+        &80xs
+            padding-left: 80px !important
+            padding-right: 80px !important
+
+        &85xs
+            padding-left: 85px !important
+            padding-right: 85px !important
+
+        &90xs
+            padding-left: 90px !important
+            padding-right: 90px !important
+
+        &95xs
+            padding-left: 95px !important
+            padding-right: 95px !important
+
+        &100xs
+            padding-left: 100px !important
+            padding-right: 100px !important
+
+        &105xs
+            padding-left: 105px !important
+            padding-right: 105px !important
+
+        &110xs
+            padding-left: 110px !important
+            padding-right: 110px !important
+
+        &115xs
+            padding-left: 115px !important
+            padding-right: 115px !important
+
+        &120xs
+            padding-left: 120px !important
+            padding-right: 120px !important
+
+    .py
+
+        &0xs
+            padding-top: 0!important
+            padding-bottom: 0 !important
+
+        &1xs
+            padding-top: 1px!important
+            padding-bottom: 1px !important
+
+        &2xs
+            padding-top: 2px!important
+            padding-bottom: 2px !important
+
+        &3xs
+            padding-top: 3px!important
+            padding-bottom: 3px !important
+
+        &4xs
+            padding-top: 4px!important
+            padding-bottom: 4px !important
+
+        &5xs
+            padding-top: 5px!important
+            padding-bottom: 5px !important
+
+        &6xs
+            padding-top: 6px!important
+            padding-bottom: 6px !important
+
+        &7xs
+            padding-top: 7px!important
+            padding-bottom: 7px !important
+
+        &8xs
+            padding-top: 8px!important
+            padding-bottom: 8px !important
+
+        &9xs
+            padding-top: 9px!important
+            padding-bottom: 9px !important
+
+        &10xs
+            padding-top: 10px!important
+            padding-bottom: 10px !important
+
+        &15xs
+            padding-top: 15px!important
+            padding-bottom: 15px !important
+
+        &20xs
+            padding-top: 20px!important
+            padding-bottom: 20px !important
+
+        &25xs
+            padding-top: 25px!important
+            padding-bottom: 25px !important
+
+        &30xs
+            padding-top: 30px!important
+            padding-bottom: 30px !important
+
+        &35xs
+            padding-top: 35px!important
+            padding-bottom: 35px !important
+
+        &40xs
+            padding-top: 40px!important
+            padding-bottom: 40px !important
+
+        &45xs
+            padding-top: 45px!important
+            padding-bottom: 45px !important
+
+        &50xs
+            padding-top: 50px!important
+            padding-bottom: 50px !important
+
+        &55xs
+            padding-top: 55px!important
+            padding-bottom: 55px !important
+
+        &60xs
+            padding-top: 60px!important
+            padding-bottom: 60px !important
+
+        &65xs
+            padding-top: 65px!important
+            padding-bottom: 65px !important
+
+        &70xs
+            padding-top: 70px!important
+            padding-bottom: 70px !important
+
+        &75xs
+            padding-top: 75px!important
+            padding-bottom: 75px !important
+
+        &80xs
+            padding-top: 80px!important
+            padding-bottom: 80px !important
+
+        &85xs
+            padding-top: 85px!important
+            padding-bottom: 85px !important
+
+        &90xs
+            padding-top: 90px!important
+            padding-bottom: 90px !important
+
+        &95xs
+            padding-top: 95px!important
+            padding-bottom: 95px !important
+
+        &100xs
+            padding-top: 100px!important
+            padding-bottom: 100px !important
+
+        &105xs
+            padding-top: 105px!important
+            padding-bottom: 105px !important
+
+        &110xs
+            padding-top: 110px!important
+            padding-bottom: 110px !important
+
+        &115xs
+            padding-top: 115px!important
+            padding-bottom: 115px !important
+
+        &120xs
+            padding-top: 120px!important
+            padding-bottom: 120px !important
+
+    .m
+
+        &0xs
+            margin: 0 !important
+
+        &1xs
+            margin: 1px !important
+
+        &2xs
+            margin: 2px !important
+
+        &3xs
+            margin: 3px !important
+
+        &4xs
+            margin: 4px !important
+
+        &5xs
+            margin: 5px !important
+
+        &6xs
+            margin: 6px !important
+
+        &7xs
+            margin: 7px !important
+
+        &8xs
+            margin: 8px !important
+
+        &9xs
+            margin: 9px !important
+
+        &10xs
+            margin: 10px !important
+
+        &15xs
+            margin: 15px !important
+
+        &20xs
+            margin: 20px !important
+
+        &25xs
+            margin: 25px !important
+
+        &30xs
+            margin: 30px !important
+
+        &35xs
+            margin: 35px !important
+
+        &40xs
+            margin: 40px !important
+
+        &45xs
+            margin: 45px !important
+
+        &50xs
+            margin: 50px !important
+
+        &55xs
+            margin: 55px !important
+
+        &60xs
+            margin: 60px !important
+
+        &65xs
+            margin: 65px !important
+
+        &70xs
+            margin: 70px !important
+
+        &75xs
+            margin: 75px !important
+
+        &80xs
+            margin: 80px !important
+
+        &85xs
+            margin: 85px !important
+
+        &90xs
+            margin: 90px !important
+
+        &95xs
+            margin: 95px !important
+
+        &100xs
+            margin: 100px !important
+
+        &105xs
+            margin: 105px !important
+
+        &110xs
+            margin: 110px !important
+
+        &115xs
+            margin: 115px !important
+
+        &120xs
+            margin: 120px !important
+
+    .mt
+
+        &0xs
+            margin-top: 0 !important
+
+        &1xs
+            margin-top: 1px !important
+
+        &2xs
+            margin-top: 2px !important
+
+        &3xs
+            margin-top: 3px !important
+
+        &4xs
+            margin-top: 4px !important
+
+        &5xs
+            margin-top: 5px !important
+
+        &6xs
+            margin-top: 6px !important
+
+        &7xs
+            margin-top: 7px !important
+
+        &8xs
+            margin-top: 8px !important
+
+        &9xs
+            margin-top: 9px !important
+
+        &10xs
+            margin-top: 10px !important
+
+        &15xs
+            margin-top: 15px !important
+
+        &20xs
+            margin-top: 20px !important
+
+        &25xs
+            margin-top: 25px !important
+
+        &30xs
+            margin-top: 30px !important
+
+        &35xs
+            margin-top: 35px !important
+
+        &40xs
+            margin-top: 40px !important
+
+        &45xs
+            margin-top: 45px !important
+
+        &50xs
+            margin-top: 50px !important
+
+        &55xs
+            margin-top: 55px !important
+
+        &60xs
+            margin-top: 60px !important
+
+        &65xs
+            margin-top: 65px !important
+
+        &70xs
+            margin-top: 70px !important
+
+        &75xs
+            margin-top: 75px !important
+
+        &80xs
+            margin-top: 80px !important
+
+        &85xs
+            margin-top: 85px !important
+
+        &90xs
+            margin-top: 90px !important
+
+        &95xs
+            margin-top: 95px !important
+
+        &100xs
+            margin-top: 100px !important
+
+        &105xs
+            margin-top: 105px !important
+
+        &110xs
+            margin-top: 110px !important
+
+        &115xs
+            margin-top: 115px !important
+
+        &120xs
+            margin-top: 120px !important
+
+    .mb
+
+        &0xs
+            margin-bottom: 0 !important
+
+        &1xs
+            margin-bottom: 1px !important
+
+        &2xs
+            margin-bottom: 2px !important
+
+        &3xs
+            margin-bottom: 3px !important
+
+        &4xs
+            margin-bottom: 4px !important
+
+        &5xs
+            margin-bottom: 5px !important
+
+        &6xs
+            margin-bottom: 6px !important
+
+        &7xs
+            margin-bottom: 7px !important
+
+        &8xs
+            margin-bottom: 8px !important
+
+        &9xs
+            margin-bottom: 9px !important
+
+        &10xs
+            margin-bottom: 10px !important
+
+        &15xs
+            margin-bottom: 15px !important
+
+        &20xs
+            margin-bottom: 20px !important
+
+        &25xs
+            margin-bottom: 25px !important
+
+        &30xs
+            margin-bottom: 30px !important
+
+        &35xs
+            margin-bottom: 35px !important
+
+        &40xs
+            margin-bottom: 40px !important
+
+        &45xs
+            margin-bottom: 45px !important
+
+        &50xs
+            margin-bottom: 50px !important
+
+        &55xs
+            margin-bottom: 55px !important
+
+        &60xs
+            margin-bottom: 60px !important
+
+        &65xs
+            margin-bottom: 65px !important
+
+        &70xs
+            margin-bottom: 70px !important
+
+        &75xs
+            margin-bottom: 75px !important
+
+        &80xs
+            margin-bottom: 80px !important
+
+        &85xs
+            margin-bottom: 85px !important
+
+        &90xs
+            margin-bottom: 90px !important
+
+        &95xs
+            margin-bottom: 95px !important
+
+        &100xs
+            margin-bottom: 100px !important
+
+        &105sp
+            margin-bottom: 105px !important
+
+        &110sp
+            margin-bottom: 110px !important
+
+        &115sp
+            margin-bottom: 115px !important
+
+        &120sp
+            margin-bottom: 120px !important
+
+    .mr
+
+        &0xs
+            margin-right: 0 !important
+
+        &1xs
+            margin-right: 1px !important
+
+        &2xs
+            margin-right: 2px !important
+
+        &3xs
+            margin-right: 3px !important
+
+        &4xs
+            margin-right: 4px !important
+
+        &5xs
+            margin-right: 5px !important
+
+        &6xs
+            margin-right: 6px !important
+
+        &7xs
+            margin-right: 7px !important
+
+        &8xs
+            margin-right: 8px !important
+
+        &9xs
+            margin-right: 9px !important
+
+        &10xs
+            margin-right: 10px !important
+
+        &15xs
+            margin-right: 15px !important
+
+        &20xs
+            margin-right: 20px !important
+
+        &25xs
+            margin-right: 25px !important
+
+        &30xs
+            margin-right: 30px !important
+
+        &35xs
+            margin-right: 35px !important
+
+        &40xs
+            margin-right: 40px !important
+
+        &45xs
+            margin-right: 45px !important
+
+        &50xs
+            margin-right: 50px !important
+
+        &55xs
+            margin-right: 55px !important
+
+        &60xs
+            margin-right: 60px !important
+
+        &65xs
+            margin-right: 65px !important
+
+        &70xs
+            margin-right: 70px !important
+
+        &75xs
+            margin-right: 75px !important
+
+        &80xs
+            margin-right: 80px !important
+
+        &85xs
+            margin-right: 85px !important
+
+        &90xs
+            margin-right: 90px !important
+
+        &95xs
+            margin-right: 95px !important
+
+        &100xs
+            margin-right: 100px !important
+
+        &105xs
+            margin-right: 105px !important
+
+        &110xs
+            margin-right: 110px !important
+
+        &115xs
+            margin-right: 115px !important
+
+        &120xs
+            margin-right: 120px !important
+
+        &autoxs
+            margin-right: auto !important
+
+    .ml
+
+        &0xs
+            margin-left: 0 !important
+
+        &1xs
+            margin-left: 1px !important
+
+        &2xs
+            margin-left: 2px !important
+
+        &3xs
+            margin-left: 3px !important
+
+        &4xs
+            margin-left: 4px !important
+
+        &5xs
+            margin-left: 5px !important
+
+        &6xs
+            margin-left: 6px !important
+
+        &7xs
+            margin-left: 7px !important
+
+        &8xs
+            margin-left: 8px !important
+
+        &9xs
+            margin-left: 9px !important
+
+        &10xs
+            margin-left: 10px !important
+
+        &15xs
+            margin-left: 15px !important
+
+        &20xs
+            margin-left: 20px !important
+
+        &25xs
+            margin-left: 25px !important
+
+        &30xs
+            margin-left: 30px !important
+
+        &35xs
+            margin-left: 35px !important
+
+        &40xs
+            margin-left: 40px !important
+
+        &45xs
+            margin-left: 45px !important
+
+        &50xs
+            margin-left: 50px !important
+
+        &55xs
+            margin-left: 55px !important
+
+        &60xs
+            margin-left: 60px !important
+
+        &65xs
+            margin-left: 65px !important
+
+        &70xs
+            margin-left: 70px !important
+
+        &75xs
+            margin-left: 75px !important
+
+        &80xs
+            margin-left: 80px !important
+
+        &85xs
+            margin-left: 85px !important
+
+        &90xs
+            margin-left: 90px !important
+
+        &95xs
+            margin-left: 95px !important
+
+        &100xs
+            margin-left: 100px !important
+
+        &105xs
+            margin-left: 105px !important
+
+        &110xs
+            margin-left: 110px !important
+
+        &115xs
+            margin-left: 115px !important
+
+        &120xs
+            margin-left: 120px !important
+
+        &autoxs
+            margin-left: auto !important
+
+    .mx
+
+        &0xs
+            margin-left: 0 !important
+            margin-right: 0 !important
+
+        &1xs
+            margin-left: 1px !important
+            margin-right: 1px !important
+
+        &2xs
+            margin-left: 2px !important
+            margin-right: 2px !important
+
+        &3xs
+            margin-left: 3px !important
+            margin-right: 3px !important
+
+        &4xs
+            margin-left: 4px !important
+            margin-right: 4px !important
+
+        &5xs
+            margin-left: 5px !important
+            margin-right: 5px !important
+
+        &6xs
+            margin-left: 6px !important
+            margin-right: 6px !important
+
+        &7xs
+            margin-left: 7px !important
+            margin-right: 7px !important
+
+        &8xs
+            margin-left: 8px !important
+            margin-right: 8px !important
+
+        &9xs
+            margin-left: 9px !important
+            margin-right: 9px !important
+
+        &10xs
+            margin-left: 10px !important
+            margin-right: 10px !important
+
+        &15xs
+            margin-left: 15px !important
+            margin-right: 15px !important
+
+        &20xs
+            margin-left: 20px !important
+            margin-right: 20px !important
+
+        &25xs
+            margin-left: 25px !important
+            margin-right: 25px !important
+
+        &30xs
+            margin-left: 30px !important
+            margin-right: 30px !important
+
+        &35xs
+            margin-left: 35px !important
+            margin-right: 35px !important
+
+        &40xs
+            margin-left: 40px !important
+            margin-right: 40px !important
+
+        &45xs
+            margin-left: 45px !important
+            margin-right: 45px !important
+
+        &50xs
+            margin-left: 50px !important
+            margin-right: 50px !important
+
+        &55xs
+            margin-left: 55px !important
+            margin-right: 55px !important
+
+        &60xs
+            margin-left: 60px !important
+            margin-right: 60px !important
+
+        &65xs
+            margin-left: 65px !important
+            margin-right: 65px !important
+
+        &70xs
+            margin-left: 70px !important
+            margin-right: 70px !important
+
+        &75xs
+            margin-left: 75px !important
+            margin-right: 75px !important
+
+        &80xs
+            margin-left: 80px !important
+            margin-right: 80px !important
+
+        &85xs
+            margin-left: 85px !important
+            margin-right: 85px !important
+
+        &90xs
+            margin-left: 90px !important
+            margin-right: 90px !important
+
+        &95xs
+            margin-left: 95px !important
+            margin-right: 95px !important
+
+        &100xs
+            margin-left: 100px !important
+            margin-right: 100px !important
+
+        &105xs
+            margin-left: 105px !important
+            margin-right: 105px !important
+
+        &110xs
+            margin-left: 110px !important
+            margin-right: 110px !important
+
+        &115xs
+            margin-left: 115px !important
+            margin-right: 115px !important
+
+        &120xs
+            margin-left: 120px !important
+            margin-right: 120px !important
+
+        &autoxs
+            margin-left: auto !important
+            margin-right: auto !important
+
+    .my
+
+        &0xs
+            margin-top: 0!important
+            margin-bottom: 0 !important
+
+        &1xs
+            margin-top: 1px!important
+            margin-bottom: 1px !important
+
+        &2xs
+            margin-top: 2px!important
+            margin-bottom: 2px !important
+
+        &3xs
+            margin-top: 3px!important
+            margin-bottom: 3px !important
+
+        &4xs
+            margin-top: 4px!important
+            margin-bottom: 4px !important
+
+        &5xs
+            margin-top: 5px!important
+            margin-bottom: 5px !important
+
+        &6xs
+            margin-top: 6px!important
+            margin-bottom: 6px !important
+
+        &7xs
+            margin-top: 7px!important
+            margin-bottom: 7px !important
+
+        &8xs
+            margin-top: 8px!important
+            margin-bottom: 8px !important
+
+        &9xs
+            margin-top: 9px!important
+            margin-bottom: 9px !important
+
+        &10xs
+            margin-top: 10px!important
+            margin-bottom: 10px !important
+
+        &15xs
+            margin-top: 15px!important
+            margin-bottom: 15px !important
+
+        &20xs
+            margin-top: 20px!important
+            margin-bottom: 20px !important
+
+        &25xs
+            margin-top: 25px!important
+            margin-bottom: 25px !important
+
+        &30xs
+            margin-top: 30px!important
+            margin-bottom: 30px !important
+
+        &35xs
+            margin-top: 35px!important
+            margin-bottom: 35px !important
+
+        &40xs
+            margin-top: 40px!important
+            margin-bottom: 40px !important
+
+        &45xs
+            margin-top: 45px!important
+            margin-bottom: 45px !important
+
+        &50xs
+            margin-top: 50px!important
+            margin-bottom: 50px !important
+
+        &55xs
+            margin-top: 55px!important
+            margin-bottom: 55px !important
+
+        &60xs
+            margin-top: 60px!important
+            margin-bottom: 60px !important
+
+        &65xs
+            margin-top: 65px!important
+            margin-bottom: 65px !important
+
+        &70xs
+            margin-top: 70px!important
+            margin-bottom: 70px !important
+
+        &75xs
+            margin-top: 75px!important
+            margin-bottom: 75px !important
+
+        &80xs
+            margin-top: 80px!important
+            margin-bottom: 80px !important
+
+        &85xs
+            margin-top: 85px!important
+            margin-bottom: 85px !important
+
+        &90xs
+            margin-top: 90px!important
+            margin-bottom: 90px !important
+
+        &95xs
+            margin-top: 95px!important
+            margin-bottom: 95px !important
+
+        &100xs
+            margin-top: 100px!important
+            margin-bottom: 100px !important
+
+        &105xs
+            margin-top: 105px!important
+            margin-bottom: 105px !important
+
+        &110xs
+            margin-top: 110px!important
+            margin-bottom: 110px !important
+
+        &115xs
+            margin-top: 115px!important
+            margin-bottom: 115px !important
+
+        &120xs
+            margin-top: 120px!important
+            margin-bottom: 120px !important
+
+    .w
+
+        &1xs,
+        &fullxs
+            width: 100%
+
+    .centerxs
+        margin-left: auto !important
+        margin-right: auto !important
+
+    .d
+
+        &-none-xs
+            display: none !important
+
+        &-inline-block-xs
+            display: inline-block !important
+
+        &-block-xs
+            display: block !important
+
+        &-flex-xs
+            display: flex !important
+
+        &-inline-flex-xs
+            display: inline-flex !important
+
+    .flex
+
+        &-row-xs
+            flex-direction: row !important
+
+        &-column-xs
+            flex-direction: column !important
+
+        &-row-reverse-xs
+            flex-direction: row-reverse !important
+
+        &-column-reverse-xs
+            flex-direction: column-reverse !important
+
+        &-wrap-xs
+            flex-wrap: wrap !important
+
+        &-nowrap-xs
+            flex-wrap: nowrap !important
+
+        &-wrap-reverse-xs
+            flex-wrap: wrap-reverse !important
+
+    .justify-content
+
+        &-start-xs
+            justify-content: flex-start !important
+
+        &-end-xs
+            justify-content: flex-end !important
+
+        &-center-xs
+            justify-content: center !important
+
+        &-between-xs
+            justify-content: space-between !important
+
+        &-around-xs
+            justify-content: space-around !important
+
+    .align-items
+
+        &-start-xs
+            align-items: flex-start !important
+
+        &-end-xs
+            align-items: flex-end !important
+
+        &-center-xs
+            align-items: center !important
+
+        &-baseline-xs
+            align-items: baseline !important
+
+        &-stretch-xs
+            align-items: stretch !important
+
+    .align-content
+
+        &-start-xs
+            align-content: flex-start !important
+
+        &-end-xs
+            align-content: flex-end !important
+
+        &-center-xs
+            align-content: center !important
+
+        &-between-xs
+            align-content: space-between !important
+
+        &-around-xs
+            align-content: space-around !important
+
+        &-stretch-xs
+            align-content: stretch !important
+
+    .align-self
+
+        &-auto-xs
+            align-self: auto !important
+
+        &-start-xs
+            align-self: flex-start !important
+
+        &-end-xs
+            align-self: flex-end !important
+
+        &-center-xs
+            align-self: center !important
+
+        &-baseline-xs
+            align-self: baseline !important
+
+        &-stretch-xs
+            align-self: stretch !important
+
+    .f
+
+        &r-xs
+            float: right
+
+        &l-xs
+            float: left
+
+        &n-xs
+            float: none
+
+    .t
+
+        &c-xs
+            text-align: center
+
+        &r-xs
+            text-align: right
+
+        &l-xs
+            text-align: left
