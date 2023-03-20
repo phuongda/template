@@ -14,11 +14,13 @@
     --color-white: white
     --color-black: #{$color-text}
     --color-gray: #{$color-gray}
+    --color-gray2: #{$color-gray2}
     --color-green: #{$color-green}
     --color-blue: #{$color-blue}
     --color-red: #{$color-red}
     --color-orange: #{$color-orange}
     --color-yellow: #{$color-yellow}
+    --transition-default: 0.5s
 
 .l-container
     max-width: 1400px
@@ -222,7 +224,7 @@
 
 .c-box2
     padding: 40px
-    border: 1px solid $color-gray3
+    border: 1px solid val(--color-gray2)
     background: rgba(255, 255, 255, 60%)
     box-shadow: 0 2px 4px rgb(0 0 0 / 16%)
 
@@ -249,17 +251,17 @@
     i
         margin-right: 10px
 
-    &--border-bottom
+    &.border-bottom
         padding-bottom: 20px
         border-bottom: var(--border-width, 1px) solid
 
-        &.c-title--border-md
+        &.border-md
             --border-width: 2px
 
-        &.c-title--border-lg
+        &.border-lg
             --border-width: 3px
 
-    &--border-short
+    &.border-short
         border: 0!important
         position: relative
 
@@ -272,31 +274,31 @@
             left: 50%
             transform: translateX(-50%)
 
-        &.c-title--border-top
+        &.border-top
             padding-top: 20px
 
             &::after
                 top: 0
 
-        &.c-title--border-bottom
+        &.border-bottom
             padding-bottom: 20px
 
             &::after
                 bottom: 0
 
-        &.c-title--border-hlg
+        &.border-hlg
             --border-height: 2px
 
-        &.c-title--border-sm
+        &.border-sm
             --border-width: 20px
 
-        &.c-title--border-md
+        &.border-md
             --border-width: 30px
 
-        &.c-title--border-lg
+        &.border-lg
             --border-width: 60px
 
-    &--border-left
+    &.border-left
         padding-left: 20px
 
         &::after
@@ -308,24 +310,24 @@
             left: 0
             top: var(--border-top, 0)
 
-        &.c-title--border-md
+        &.border-md
             --border-width: 2px
 
-        &.c-title--border-lg
+        &.border-lg
             --border-width: 5px
 
-        &.c-title--border-h25
+        &.border-h25
             --border-height: 25px
             --border-top: 8px
 
-        &.c-title--border-h35
+        &.border-h35
             --border-height: 35px
             --border-top: 5px
 
-        &.c-title--border-h45
+        &.border-h45
             --border-height: 45px
 
-    &--border-lr
+    &.border-lr
         padding-left: 50px
         padding-right: 50px
 
@@ -334,7 +336,7 @@
             content: ""
             width: 40px
             height: var(--border-height, 1px)
-            background: $color-black
+            background: var(--color-black)
             position: absolute
             top: 50%
             transform: translateY(-50%)
@@ -345,13 +347,13 @@
         &::before
             right: 0
 
-        &.c-title--border-md
+        &.border-md
             --border-height: 2px
 
-        &.c-title--border-lg
+        &.border-lg
             --border-height: 3px
 
-        &.c-title--rotate
+        &.rotate
 
             &::after,
             &::before
@@ -367,23 +369,23 @@
                 right: -20px
                 transform: rotate(45deg)
 
-            &.c-title--border-md
+            &.border-md
                 --border-width: 2px
                 --border-height: 30px
 
-            &.c-title--border-lg
+            &.border-lg
                 --border-width: 3px
                 --border-height: 30px
 
-    &--center
+    &.title-center
         flex-direction: column
         text-align: center
 
-    &--column
+    &.title-column
         flex-direction: column
         align-items: flex-start
 
-    &--subtitle
+    &.title-subtitle
         align-items: baseline
 
         &:not(.flex-column)
@@ -404,13 +406,13 @@
             top: var(--square-top, 20px)
             left: 0
 
-        &--md
+        &.square-md
             --square-width: 15px
             --square-height: 15px
             --square-padding-left: 25px
             --square-top: 18px
 
-        &--lg
+        &.square-lg
             --square-width: 20px
             --square-height: 20px
             --square-padding-left: 30px
@@ -428,35 +430,35 @@
             position: absolute
             left: 0
 
-        &--sm
+        &.line-sm
             --line-width: 10px
             --line-padding-left: 20px
 
-        &--md
+        &.line-md
             --line-width: 20px
             --line-padding-left: 30px
 
-        &--lg
+        &.line-lg
             --line-width: 50px
             --line-padding-left: 60px
 
-        &--top
+        &.line-top
             --line-padding-left: 0
 
             &::before
                 top: 0
 
-        &--center
+        &.line-center
 
             &::before
                 top: 50%
 
-        &--bottom
+        &.line-bottom
 
             &::before
                 bottom: 20%
 
-        &--right
+        &.line-right
             --line-padding-left: 0
             padding-right: var(--line-padding-right, 10px)
 
@@ -464,13 +466,13 @@
                 left: unset
                 right: 0
 
-            &.u-line--sm
+            &.line-sm
                 --line-padding-right: 20px
 
-            &.u-line--md
+            &.line-md
                 --line-padding-right: 30px
 
-            &.u-line--lg
+            &.line-lg
                 --line-padding-right: 60px
 
     &.text
@@ -602,7 +604,7 @@
     font-family: var(--font-default)
     color: #cccccc
 
-    &--line
+    &.subtitle-line
         padding-left: var(--line-padding-left, 10px)
         position: relative
 
@@ -645,13 +647,13 @@
             --line-padding-left: 0
             padding-right: var(--padding-right, 10px)
 
-            &.c-subtitle--line-sm
+            &.subtitle-line-sm
                 --padding-right: 20px
 
-            &.c-subtitle--line-md
+            &.subtitle-line-md
                 --padding-right: 30px
 
-            &.c-subtitle--line-lg
+            &.subtitle-line-lg
                 --padding-right: 60px
 
 .l-titles
@@ -667,37 +669,37 @@
         width: var(--circle-width, 5px)
         height: var(--circle-height, 5px)
         border-radius: 10px
-        background: $color-green
+        background: var(--color-main)
         position: absolute
         top: -5px
         left: 50%
         transform: translateX(-50%)
 
-    &-sm
+    &.circle-sm
         --circle-width: 4px
         --circle-height: 4px
 
-    &-lg
+    &.circle-lg
         --circle-width: 10px
         --circle-height: 10px
 
 .u-highlight
     padding-bottom: 5px
-    background-image: linear-gradient($color-green, $color-green)
+    background-image: linear-gradient(var(--color-main), var(--color-main))
     background-position: 0 100%
     background-size: var(--background-size, 100% 1px)
     background-repeat: no-repeat
 
-    &--md
+    &.highlight-md
         --background-size: 100% 3px
 
-    &--lg
+    &.highlight-lg
         --background-size: 100% 6px
 
-    &--10
+    &.highlight-10
         background-size: 100% 10px
 
-    &--spill
+    &.highlight-spill
         margin-left: var(--margin-left, -10px)
         margin-right: var(--margin-right, -10px)
         padding-left: var(--padding-left, 10px)
@@ -721,7 +723,7 @@
             --padding-left: 2px
             --padding-right: 2px
 
-    &--position
+    &.highlight-position
 
         &-80
             background-position-y: 80%
@@ -729,22 +731,20 @@
 .maxline
     -webkit-box-orient: vertical
     display: -webkit-box
+    -webkit-line-clamp: val(--line, 1)
     overflow: hidden
 
-    &--line1
-        -webkit-line-clamp: 1
+    &-2
+        --line: 2
 
-    &--line2
-        -webkit-line-clamp: 2
+    &-3
+        --line: 3
 
-    &--line3
-        -webkit-line-clamp: 3
+    &-4
+        --line: 4
 
-    &--line4
-        -webkit-line-clamp: 4
-
-    &--line5
-        -webkit-line-clamp: 5
+    &-5
+        --line: 5
 /* end title */
 
 /* description */
@@ -773,7 +773,7 @@
     footer
         margin-top: 10px
 
-    &--bg
+    &.blockquote-bg
         padding: 20px
         background: #f8f9fa
 /* end blockquote */
@@ -790,130 +790,130 @@
     font-weight: var(--font-weight-default)
     line-height: 1.4
     color: var(--color)
-    transition: 0.5s
+    transition: var(--transition-default)
 
     img
         margin-right: 10px
-        transition: 0.5s
+        transition: var(--transition-default)
 
     i
         margin-right: 10px
-        transition: 0.5s
+        transition: var(--transition-default)
 
     span
         margin-top: 4px
 
-    &:not(.c-button--opacity)
+    &:not(.buttonopacity)
 
         &:hover
             border: 1px solid
             background: var(--hover-background)
             color: var(--hover-color)
 
-    &--black
+    &.button-black
         --background: var(--color-black)
         --color: var(--color-white)
         --hover-color: var(--color-black)
 
-    &--blue
+    &.button-blue
         --background: var(--color-blue)
         --color: var(--color-white)
         --hover-color: var(--color-blue)
 
-    &--green
+    &.button-green
         --background: var(--color-green)
         --color: var(--color-white)
         --hover-color: var(--color-green)
 
-    &--orange
+    &.button-orange
         --background: var(--color-orange)
         --color: var(--color-white)
         --hover-color: var(--color-orange)
 
-    &--yellow
+    &.button-yellow
         --background: var(--color-yellow)
         --color: var(--color-white)
         --hover-color: var(--color-yellow)
 
-    &--red
+    &.button-red
         --background: var(--color-red)
         --color: var(--color-white)
         --hover-color: var(--color-red)
 
-    &--white
+    &.button-white
         border: 1px solid
         --background: var(--color-white)
         --color: var(--color-black)
 
-    &--outline
+    &.button-outline
         border: 1px solid
         --background: var(--color-white)
 
-        &.c-button--md
+        &.button-md
             border-width: 2px
 
-        &.c-button--black
+        &.button-black
             --color: var(--color-black)
 
-        &.c-button--blue
+        &.button-blue
             --color: var(--color-blue)
 
-        &.c-button--green
+        &.button-green
             --color: var(--color-green)
 
-        &.c-button--orange
+        &.button-orange
             --color: var(--color-orange)
 
-        &.c-button--yellow
+        &.button-yellow
             --color: var(--color-yellow)
 
-        &.c-button--red
+        &.button-red
             --color: var(--color-red)
 
-        &.c-button--white
+        &.button-white
             --color: var(--color-black)
 
-        &:not(.c-button--opacity)
+        &:not(.button-opacity)
 
             &:hover
                 border-color: var(--border-color)
                 background: var(--hover-background)
                 color: var(--color-white)
 
-                &.c-button--black
+                &.button-black
                     --border-color: var(--color-green)
                     --hover-background: var(--color-green)
 
-                &.c-button--blue
+                &.button-blue
                     --border-color: var(--color-blue)
                     --hover-background: var(--color-blue)
 
-                &.c-button--green
+                &.button-green
                     --border-color: var(--color-green)
                     --hover-background: var(--color-green)
 
-                &.c-button--orange
+                &.button-orange
                     --border-color: var(--color-orange)
                     --hover-background: var(--color-orange)
 
-                &.c-button--yellow
+                &.button-yellow
                     --border-color: var(--color-yellow)
                     --hover-background: var(--color-yellow)
 
-                &.c-button--red
+                &.button-red
                     --border-color: var(--color-red)
                     --hover-background: var(--color-red)
 
-                &.c-button--white
+                &.button-white
                     --border-color: var(--color-black)
                     --hover-background: var(--color-black)
 
-    &--opacity
+    &.button-opacity
 
         &:hover
             opacity: 0.5
 
-    &--border-bottom
+    &.button-border-bottom
         border: 0!important
         border-bottom: 1px solid #cccccc!important
 
@@ -922,13 +922,13 @@
             height: 20px
             margin-right: 14px
 
-        &:not(.c-button--opacity)
+        &:not(.button-opacity)
 
             &:hover
                 color: var(--color-blue)
                 border-color: var(--color-blue)!important
 
-    &:not(.c-button--opacity)
+    &:not(.button-opacity)
 
         &:hover
 
@@ -951,7 +951,7 @@
                     &-cart-orange
                         background-image: url("../img/common/ic-cart.svg")
 
-    &--max-width
+    &.button-maxwidth
         width: min(100%, var(--max-width, 260px))!important
 
         &-280
@@ -988,7 +988,7 @@
     font-size: 1.6rem
     line-height: 1.8
     position: relative
-    transition: .5s
+    transition: var(--transition-default)
 
     &.icon-left
         padding-left: 35px
@@ -1003,7 +1003,7 @@
             top: 50%
             left: 0
             transform: translateY(-50%)
-            transition: 0.5s
+            transition: var(--transition-default)
 
     &.icon-right
         align-items: center
@@ -1012,7 +1012,7 @@
             width: 38px
             height: 8px
             margin-left: 12px
-            transition: 0.5s
+            transition: var(--transition-default)
 
     &.opacity
 
@@ -1069,22 +1069,32 @@
 /* icon */
 
 .c-icon
-    width: 20px
-    height: 20px
+    width: var(--width, 20px)
+    height: var(--height, 20px)
     display: block
     @include bg-img-contain()
 
-    &-sm
-        width: 15px
-        height: 15px
+    .icon
 
-    &-md
-        width: 20px
-        height: 20px
+        &-sm
+            --width: 15px
+            --height: 15px
 
-    &-lg
-        width: 30px
-        height: 30px
+        &-lg
+            width: 30px
+            height: 30px
+
+        &-40
+            --width: 40px
+            --height: 40px
+
+        &-50
+            --width: 50px
+            --height: 50px
+
+        &-60
+            --width: 60px
+            --height: 60px
 
     &.ic
 
@@ -1258,57 +1268,43 @@
 /* end icon */
 
 /* sclore */
-#Y
+.c-sclore
 
-    &_sclorebox
-        position: absolute
-        bottom: 0
-        right: 50px
-        z-index: 100
-
-    &_sclore
+    .sclore-y
         max-width: 35px
-        margin: 0 auto
         display: flex
         align-items: flex-start
+        margin: 0 auto
 
         div
-            background: #fff
+            width: 1px
             height: 172px
             display: block
-            width: 1px
+            background: white
 
         span
-            display: block
-            margin: 0 auto
-            -webkit-animation: sdb 1.5s infinite
-            animation: sdb 1.5s infinite
-            text-align: center
-            -webkit-box-sizing: border-box
-            box-sizing: border-box
-
-            /* padding-left: 13px;
-            background: #c71c20
             width: 2px
             height: 20px
+            box-sizing: border-box
+            display: block
+            margin: 0 auto
+            /* padding-left: 13px;
+            background: #c71c20
+            text-align: center
+            animation: aniSclore 1.5s infinite
 
         p
-            text-align: center
-            color: #fff
             margin-top: 17px
             margin-left: -6px
-            z-index: 99
             font-size: 11px
             letter-spacing: 2px
-            -webkit-transform: rotate(90deg)
-            -moz-transform: rotate(90deg)
-            -ms-transform: rotate(90deg)
-            -o-transform: rotate(90deg)
+            text-align: center
+            color: white
             transform: rotate(90deg)
+            z-index: 99
 
-@keyframes sdb
+@keyframes aniSclore
     0%
-        -webkit-transform: rotate(0deg) translate(0, 0)
         transform: rotate(0deg) translate(0, 0)
         opacity: 1
 
@@ -1316,7 +1312,177 @@
         opacity: 1
 
     100%
-        -webkit-transform: rotate(0deg) translate(0, 127px)
         transform: rotate(0deg) translate(0, 127px)
         opacity: 1
+
+.l-sclore
+    position: absolute
+    right: 50px
+    bottom: 0
+    z-index: 100
 /* end sclore */
+
+/* table */
+.c-table
+    width: 100%
+    border-collapse: collapse
+    border-spacing: 0
+
+    th,
+    td
+        height: 80px
+        padding: 16px 5px
+        font-size: 1.5rem
+        vertical-align: middle
+
+        span
+            font-size: 1.3rem
+
+    &.height
+
+        th,
+        td
+            height: val(--height)
+
+        &93
+            --height: 93px
+
+        &0
+            --height: auto
+
+    // th
+    &.th-maxwidth
+
+        th
+            width: 200px
+            max-width: 200px
+
+    &.th-left
+
+        th
+            text-align: left
+
+    &.th-bg
+
+        th
+            background: rgba(238, 238, 238, 0.5)
+
+        &blue
+
+            th
+                background: rgba(3, 77, 143, 0.1)
+
+    &.th-cl
+
+        th
+            color: var(--color-main)
+
+        &blue
+
+            th
+                color: var(--color-blue)
+
+    &.th-bold
+
+        thead,
+        tbody
+
+            .th
+                font-weight: bold
+    // td
+    &.td-maxwidth
+
+        td
+            width: 330px
+            max-width: 330px
+
+    &.td-center
+
+        td
+            text-align: center
+
+    &.td-bg
+
+        td
+            background: rgba(238, 238, 238, 0.5)
+
+    &.td-cl
+
+        td
+            color: var(--color-gray)
+
+    // thead
+    &.thead-bg
+
+        thead
+
+            th
+                background: var(--color-main)
+                color: white
+
+    &.thead-box
+
+        thead
+
+            th
+                padding-bottom: calc(16px + 32px)
+                background: 0 0
+                color: white
+
+                &::before
+                    height: calc(100% - 34px)
+                    border-radius: 3px
+                    background: var(--color-main)
+                    top: 0
+                    bottom: unset
+                    z-index: -1
+
+    // tbody
+    &.tbody-even-bg
+
+        tr:nth-child(even)
+
+            td
+                background: rgba(238, 238, 238, 0.5)
+
+        &20
+
+            tr:nth-child(even)
+
+                td
+                    background: rgba(238, 238, 238, 0.2)
+
+    &.boder
+        border: 1px solid var(--color-gray)
+
+        th,
+        td
+            border: 1px solid var(--color-gray)
+
+    &.boder-bottom
+
+        th,
+        td
+            position: relative
+
+            &::before
+                content: ""
+                width: calc(100% - 20px)
+                left: 50%
+                height: 1px
+                background: var(--color-default)
+                position: absolute
+                bottom: 0
+                transform: translate(-50%)
+
+        th
+
+            &::before
+                background: var(--color-main)
+
+    .u-min-width
+        min-width: 120px
+
+    .u-max-width
+        max-width: 120px
+/* end table */
