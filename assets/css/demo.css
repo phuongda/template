@@ -21,7 +21,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--color-gray3);
   padding: 20px;
 }
 .p-demo .c-demos .c-demo .code {
@@ -30,7 +30,7 @@
   flex-wrap: wrap;
   min-height: 300px;
   padding: 50px 0 0 0;
-  background: #eeeeee;
+  background: var(--color-gray3);
   position: relative;
   overflow: hidden;
 }
@@ -61,7 +61,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 0 0 0 5px;
-  background: #707070;
+  background: var(--color-gray);
   font-size: 1.4rem;
   color: white;
   position: absolute;
