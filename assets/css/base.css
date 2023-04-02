@@ -387,7 +387,7 @@ img {
 
 .c-box2 {
   padding: 40px;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #EEEEEE;
   background: rgba(255, 255, 255, 0.6);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
 }
@@ -1094,13 +1094,13 @@ img {
   color: #FFCD20;
 }
 .c-button.button-red {
-  background: #FF0000;
+  background: #D90000;
   color: white;
 }
 .c-button.button-red:not(.opacity):hover {
   border: 1px solid;
   background: transparent;
-  color: #FF0000;
+  color: #D90000;
 }
 .c-button.button-white {
   background: white;
@@ -1140,8 +1140,8 @@ img {
   color: #065B8E;
 }
 .c-button.button-outline:not(.opacity):hover.button-black {
-  border-color: #066E4E;
-  background: #066E4E;
+  border-color: #8EAC65;
+  background: #8EAC65;
   color: white;
 }
 .c-button.button-outline:not(.opacity):hover.button-blue {
@@ -2383,4 +2383,4 @@ ul.u-number.number-zero li {
     width: calc(100% - 150px);
     padding-left: 0;
   }
-}/*# sourceMappingURL=base.css.map */
+}

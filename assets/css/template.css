@@ -1518,6 +1518,10 @@
   --gap: 20px;
 }
 
+.l-table {
+  width: 100%;
+}
+
 /* end table */
 /* list */
 .c-ul li {
@@ -4226,4 +4230,12 @@
     margin-right: 54px;
   }
 }
-/*** end responsive ***//*# sourceMappingURL=template.css.map */
+@media screen and (max-width: 768px) {
+  .l-table {
+    overflow: auto;
+  }
+  .l-table table {
+    min-width: 680px;
+  }
+}
+/*** end responsive ***/

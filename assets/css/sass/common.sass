@@ -1,0 +1,317 @@
+@import "core/mixin/_mixin"
+@import "core/variable/_color", "core/variable/_fonts"
+
+// .c-header
+//     background: var(--color-main)
+//     color: white
+
+//     &__slogan
+//         margin-left: 30px
+
+//         p
+//             font-size: 1.6rem
+
+//     &__menu
+//         margin-right: 40px
+
+//         a
+//             font-size: 1.8rem
+//             color: white
+
+//         li
+//             padding-left: 20px
+//             padding-right: 20px
+
+//         &.border-menu
+
+//             li
+
+//                 &::before
+//                     min-height: 20px
+//                     background: white
+
+//     &__mail
+//         background: white
+//         font-size: 1.6rem
+//         color: var(--color-blue)
+
+//         &:hover
+//             background: var(--color-blue)
+//             color: white
+//             opacity: 1
+
+//             .c-icon
+//                 width: 26px
+
+//                 &.ic-email-outline-blue
+//                     background-image: url(../img/common/ic-email-outline.svg)
+
+// .c-button
+//     font-family: 'Meiryo'
+
+//     .c-icon
+
+//         &.ic
+
+//             &-cursor-blue
+//                 --height: 24px
+//                 margin-top: -5px
+
+// .c-showmore
+//     font-size: 1.8rem
+
+//     &.icon-right
+
+//         i
+//             width: 50px
+//             margin-left: 18px
+
+// .c-banner
+
+//     &.banner-custom
+//         width: 100%
+
+//         .contents
+//             width: 60%
+//             max-width: 820px
+//             height: 80%
+//             max-height: 370px
+//             padding: 40px 40px 30px 50px
+//             background: white
+//             color: var(--color-default)
+//             position: relative
+//             top: 50%
+//             left: 8.5%
+//             transform: translateY(-50%)
+
+//         .banner
+//             width: 64%
+//             max-width: 1220px
+//             clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%)
+//             z-index: 1
+
+//             .parallax
+//                 max-width: 64%
+//                 left: unset
+//                 right: 0
+
+// .c-news
+
+//     &.have-image
+
+//         .item
+//             transition: var(--transition-default)
+
+//             .c-date
+//                 transition: var(--transition-default)
+
+//             &:hover
+//                 color: var(--color-main) !important
+
+//                 .c-date
+//                     color: var(--color-main) !important
+
+// .c-products
+
+//     .item
+
+//         .c-figure
+
+//             .sticker-counter
+//                 width: 81px
+//                 height: 81px
+//                 display: flex
+//                 align-items: flex-end
+//                 padding: 15px 16px
+//                 background: var(--color-main)
+//                 color: white
+//                 position: absolute
+
+//                 &.counter
+
+//                     &::before
+//                         width: 100%
+//                         display: block
+//                         font-size: 3.2rem
+//                         font-weight: 500
+//                         line-height: 1.4
+//                         text-align: center
+//                         border-bottom: 2px solid white
+
+//     &.checkmark
+
+//         .item
+
+//             .sticker-local
+//                 position: absolute
+//                 bottom: 10px
+//                 left: 50%
+//                 height: 60px
+//                 transform: translate(-50%, 100%)
+
+//         .c-figure
+//             background: none
+//             margin-bottom: 75px
+//             --width-space: 30px
+//             --height-space: 22px
+//             overflow: visible
+
+//         .c-showmore
+
+//             &.icon-right
+
+//                 i
+//                     width: 70px
+//                     height: 13px
+
+//     &.product-box2
+
+//         .item
+//             align-content: space-between
+//             padding: 30px
+//             background: white
+
+// .c-cols
+
+//     .txt
+//         @include box()
+//         flex-direction: column
+//         align-items: flex-start
+//         padding-top: 40px
+//         position: absolute
+//         top: 0
+//         left: 0
+
+//         &.txt-custom
+//             writing-mode: vertical-lr
+
+//         &::before
+//             content: ""
+//             width: 1px
+//             height: 20px
+//             background: var(--color-default)
+//             position: absolute
+//             top: 0
+//             left: 50%
+//             transform: translateX(-50%)
+
+// .l-instagram
+//     @include box-100()
+//     background: rgba(204, 204, 204, 44%)
+
+// main:not(.p-top)
+
+//     .c-mainvisual
+//         max-height: 710px
+
+//         &__cnt
+//             top: 50%
+//             transform: translateY(-50%)
+
+//             &::before
+//                 height: 100%
+//                 max-height: 100%
+
+//         &__bg
+
+//             &::before
+//                 background: rgba(17, 17, 17, 10%)
+
+//     .c-action
+//         padding: 15px 0
+
+//         h3
+//             margin-bottom: 60px
+
+// .u-wrap
+//     display: inline-block
+//     position: relative
+//     overflow: hidden
+
+//     &::before
+//         /* animation: wrap-to-right 2s cubic-bezier(0.4, 0, 0.2, 1) forwards; */
+//         background: #fff
+//         bottom: 0
+//         content: ""
+//         left: 0
+//         pointer-events: none
+//         position: absolute
+//         right: 0
+//         top: 0
+//         z-index: 1
+
+// @keyframes wrap-to-left
+//     100%
+//         transform: translateX(-100%)
+
+// @keyframes wrap-to-right
+//     100%
+//         transform: translateX(100%)
+
+// @media only screen and (min-width: 1921px)
+//     main:not(.p-top) .l-block.l-bg .img
+//         height: auto !important
+//         width: 100%
+
+// @media only screen and (max-width: 1680px)
+//     .c-header
+
+//         &__slogan
+//             margin-left: 20px
+
+//             p
+//                 font-size: 1.3rem
+
+//         &__menu
+//             padding-right: 10px
+//             margin-right: 0
+//             a
+//                 font-size: 1.3rem
+
+// @media only screen and (max-width: 1536px)
+//     .c-banner
+
+//         &.banner-custom
+//             width: 100%
+
+//             .contents
+//                 left: 40px
+
+// @media only screen and (min-width: 1441px)
+//     .c-products
+
+//         &.product-box2
+
+//             .item
+//                 padding: 50px 70px 10px 70px
+
+// @media only screen and (max-width: 1440px)
+//     .c-header
+
+//         &__slogan
+
+//             p
+//                 font-size: 1.1rem
+
+//         &__menu
+
+//             li
+//                 min-width: auto
+//                 padding-left: 10px
+//                 padding-right: 10px
+
+// @media screen and (min-width: 992px)
+//     .c-tabs-list
+
+//         li
+//             width: calc((100% - (20px * 4)) / 5)
+
+//             &:not(:nth-of-type(5n))
+//                 margin-right: 20px
+
+//         &.tabs-box
+
+//             li
+//                 max-width: 180px
+//                 border-color: 1px solid var(--color-default)
+//                 font-size: 1.6rem

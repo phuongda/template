@@ -2682,6 +2682,10 @@ img {
 }
 
 /*** Center middle ** */
+.position-relative {
+  position: relative;
+}
+
 .ce {
   position: absolute;
   top: 50%;
@@ -8530,4 +8534,4 @@ img {
   .tl-xs {
     text-align: left;
   }
-}/*# sourceMappingURL=master.css.map */
+}
